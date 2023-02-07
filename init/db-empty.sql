@@ -70,20 +70,14 @@ ALTER SEQUENCE public.ratings_id_seq OWNED BY public.ratings.id;
 CREATE TABLE public.ratings_items (
     id integer NOT NULL,
     "ratingId" integer NOT NULL,
-    "imgId" integer DEFAULT 0,
+    "siteId" integer DEFAULT 0,
     url text DEFAULT ''::text NOT NULL,
-    ref character varying(255) DEFAULT ''::character varying,
     name jsonb DEFAULT '{}'::jsonb,
-    "pageHtml" text DEFAULT ''::text,
     "labelsIds" jsonb DEFAULT '{}'::jsonb,
     priority integer DEFAULT 0,
-    "alexaRankContry" integer DEFAULT 10000000,
-    "alexaRank" integer DEFAULT 10000000,
-    "alexaJson" jsonb DEFAULT '{}'::jsonb,
     click integer DEFAULT 0,
     "isHiden" boolean DEFAULT false,
-    "dateCreate" timestamp with time zone,
-    whois jsonb
+    "dateCreate" timestamp with time zone
 );
 
 
@@ -112,19 +106,21 @@ ALTER SEQUENCE public.ratings_items_id_seq OWNED BY public.ratings_items.id;
 
 
 --
--- Name: ratings_items_img; Type: TABLE; Schema: public; Owner: postgres
+-- Name: sites; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.ratings_items_img (
+CREATE TABLE public.sites (
     id integer NOT NULL,
-    name character varying(255) DEFAULT ''::character varying,
     color character varying(255) DEFAULT ''::character varying,
     host character varying(255) DEFAULT ''::character varying,
-    "dateCreate" timestamp with time zone
+    "dateCreate" timestamp with time zone,
+    "alexaRank" integer DEFAULT 10000000,
+    "dateDomainCreate" date,
+    "siteScreenshotId" integer DEFAULT 0
 );
 
 
-ALTER TABLE public.ratings_items_img OWNER TO postgres;
+ALTER TABLE public.sites OWNER TO postgres;
 
 --
 -- Name: ratings_items_img_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -145,7 +141,7 @@ ALTER TABLE public.ratings_items_img_id_seq OWNER TO postgres;
 -- Name: ratings_items_img_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
-ALTER SEQUENCE public.ratings_items_img_id_seq OWNED BY public.ratings_items_img.id;
+ALTER SEQUENCE public.ratings_items_img_id_seq OWNED BY public.sites.id;
 
 
 --
@@ -187,13 +183,13 @@ ALTER SEQUENCE public.ratings_labels_id_seq OWNED BY public.ratings_labels.id;
 
 
 --
--- Name: screens_processing; Type: TABLE; Schema: public; Owner: postgres
+-- Name: sites_screenshots; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public.screens_processing (
+CREATE TABLE public.sites_screenshots (
     id integer NOT NULL,
     "ratingId" integer,
-    "imgId" integer,
+    "siteId" integer,
     "typeRating" integer,
     host character varying(255),
     url text DEFAULT ''::text,
@@ -208,7 +204,7 @@ CREATE TABLE public.screens_processing (
 );
 
 
-ALTER TABLE public.screens_processing OWNER TO postgres;
+ALTER TABLE public.sites_screenshots OWNER TO postgres;
 
 --
 -- Name: screens_processing_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -229,7 +225,7 @@ ALTER TABLE public.screens_processing_id_seq OWNER TO postgres;
 -- Name: screens_processing_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
-ALTER SEQUENCE public.screens_processing_id_seq OWNED BY public.screens_processing.id;
+ALTER SEQUENCE public.screens_processing_id_seq OWNED BY public.sites_screenshots.id;
 
 
 --
@@ -371,24 +367,10 @@ ALTER TABLE ONLY public.ratings_items ALTER COLUMN id SET DEFAULT nextval('publi
 
 
 --
--- Name: ratings_items_img id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.ratings_items_img ALTER COLUMN id SET DEFAULT nextval('public.ratings_items_img_id_seq'::regclass);
-
-
---
 -- Name: ratings_labels id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.ratings_labels ALTER COLUMN id SET DEFAULT nextval('public.ratings_labels_id_seq'::regclass);
-
-
---
--- Name: screens_processing id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.screens_processing ALTER COLUMN id SET DEFAULT nextval('public.screens_processing_id_seq'::regclass);
 
 
 --
@@ -399,10 +381,24 @@ ALTER TABLE ONLY public.sections ALTER COLUMN id SET DEFAULT nextval('public.sec
 
 
 --
+-- Name: sites id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.sites ALTER COLUMN id SET DEFAULT nextval('public.ratings_items_img_id_seq'::regclass);
+
+
+--
 -- Name: sites_processing id; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.sites_processing ALTER COLUMN id SET DEFAULT nextval('public.sites_processing_id_seq'::regclass);
+
+
+--
+-- Name: sites_screenshots id; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.sites_screenshots ALTER COLUMN id SET DEFAULT nextval('public.screens_processing_id_seq'::regclass);
 
 
 --
@@ -413,18 +409,18 @@ ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_
 
 
 --
--- Name: ratings_items_img ratings_items_img_host_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: sites ratings_items_img_host_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.ratings_items_img
+ALTER TABLE ONLY public.sites
     ADD CONSTRAINT ratings_items_img_host_key UNIQUE (host);
 
 
 --
--- Name: ratings_items_img ratings_items_img_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: sites ratings_items_img_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.ratings_items_img
+ALTER TABLE ONLY public.sites
     ADD CONSTRAINT ratings_items_img_pkey PRIMARY KEY (id);
 
 
@@ -453,10 +449,10 @@ ALTER TABLE ONLY public.ratings
 
 
 --
--- Name: screens_processing screens_processing_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: sites_screenshots screens_processing_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.screens_processing
+ALTER TABLE ONLY public.sites_screenshots
     ADD CONSTRAINT screens_processing_pkey PRIMARY KEY (id);
 
 

@@ -1,3 +1,5 @@
 node_modules
-
+tmp
 data
+db-data.sql
+db-empty.sql
