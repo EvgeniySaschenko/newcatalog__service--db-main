@@ -46,12 +46,12 @@ CREATE TABLE public.ratings (
     name jsonb DEFAULT '{}'::jsonb,
     descr jsonb DEFAULT '{}'::jsonb,
     "isHiden" boolean DEFAULT true,
-    "typeRating" character varying(20),
-    "typeSort" character varying(20),
-    "typeDisplay" character varying(20),
     "sectionsIds" jsonb,
     "visitorId" integer DEFAULT 0,
-    "dateCreate" timestamp with time zone
+    "dateCreate" timestamp with time zone,
+    "typeRating" integer DEFAULT 0,
+    "typeSort" integer DEFAULT 0,
+    "typeDisplay" integer DEFAULT 0
 );
 
 
