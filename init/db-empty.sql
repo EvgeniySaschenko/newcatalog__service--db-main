@@ -190,17 +190,14 @@ CREATE TABLE public.sites_screenshots (
     "siteScreenshotId" integer NOT NULL,
     "ratingId" integer,
     "siteId" integer,
-    "typeRating" integer,
-    host character varying(255),
     url text DEFAULT ''::text,
-    "isСanceled" boolean DEFAULT false,
-    "isCreatedScreen" boolean DEFAULT false,
-    "isProcessed" boolean DEFAULT true,
-    "isCreatedLogo" boolean DEFAULT false,
-    "isError" boolean DEFAULT false,
     "errorMessage" jsonb DEFAULT '""'::jsonb,
-    "dateUpdate" timestamp with time zone,
-    "dateCreate" timestamp with time zone
+    "dateCreate" timestamp with time zone,
+    "isUploadCustomScreenshot" boolean DEFAULT false,
+    "dateScreenshotCreated" timestamp with time zone,
+    "dateScreenshotError" timestamp with time zone,
+    "dateLogoCreated" timestamp with time zone,
+    "dateCanceled" timestamp with time zone
 );
 
 
@@ -265,51 +262,6 @@ ALTER TABLE public.sections_id_seq OWNER TO postgres;
 --
 
 ALTER SEQUENCE public.sections_id_seq OWNED BY public.sections."sectionId";
-
-
---
--- Name: sites_processing; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.sites_processing (
-    id integer NOT NULL,
-    "ratingId" integer,
-    "imgId" integer,
-    "typeRating" integer,
-    host character varying(255),
-    url text DEFAULT ''::text,
-    "isСanceled" boolean DEFAULT false,
-    "isCreated" boolean DEFAULT false,
-    "isProcessed" boolean DEFAULT true,
-    "isError" boolean DEFAULT false,
-    "errorMessage" jsonb DEFAULT '""'::jsonb,
-    "dateUpdate" timestamp with time zone,
-    "dateCreate" timestamp with time zone
-);
-
-
-ALTER TABLE public.sites_processing OWNER TO postgres;
-
---
--- Name: sites_processing_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
---
-
-CREATE SEQUENCE public.sites_processing_id_seq
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public.sites_processing_id_seq OWNER TO postgres;
-
---
--- Name: sites_processing_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
---
-
-ALTER SEQUENCE public.sites_processing_id_seq OWNED BY public.sites_processing.id;
 
 
 --
@@ -388,13 +340,6 @@ ALTER TABLE ONLY public.sites ALTER COLUMN "siteId" SET DEFAULT nextval('public.
 
 
 --
--- Name: sites_processing id; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.sites_processing ALTER COLUMN id SET DEFAULT nextval('public.sites_processing_id_seq'::regclass);
-
-
---
 -- Name: sites_screenshots siteScreenshotId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -462,14 +407,6 @@ ALTER TABLE ONLY public.sites_screenshots
 
 ALTER TABLE ONLY public.sections
     ADD CONSTRAINT sections_pkey PRIMARY KEY ("sectionId");
-
-
---
--- Name: sites_processing sites_processing_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.sites_processing
-    ADD CONSTRAINT sites_processing_pkey PRIMARY KEY (id);
 
 
 --
