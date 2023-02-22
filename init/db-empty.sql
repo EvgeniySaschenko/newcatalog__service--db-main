@@ -132,7 +132,8 @@ CREATE TABLE public.sites (
     "dateCreate" timestamp with time zone,
     "alexaRank" integer DEFAULT 10000000,
     "dateDomainCreate" date,
-    "siteScreenshotId" integer DEFAULT 0
+    "siteLogoId" integer DEFAULT 0,
+    "siteScreenshotId" integer
 );
 
 
@@ -195,9 +196,7 @@ CREATE TABLE public.sites_screenshots (
     "dateCreate" timestamp with time zone,
     "isUploadCustomScreenshot" boolean DEFAULT false,
     "dateScreenshotCreated" timestamp with time zone,
-    "dateScreenshotError" timestamp with time zone,
-    "dateLogoCreated" timestamp with time zone,
-    "dateCanceled" timestamp with time zone
+    "dateScreenshotError" timestamp with time zone
 );
 
 
