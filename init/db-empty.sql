@@ -133,7 +133,8 @@ CREATE TABLE public.sites (
     "alexaRank" integer DEFAULT 10000000,
     "dateDomainCreate" date,
     "siteLogoId" integer DEFAULT 0,
-    "siteScreenshotId" integer
+    "siteScreenshotId" integer,
+    "dateLogoCreate" timestamp with time zone
 );
 
 
@@ -189,7 +190,6 @@ ALTER SEQUENCE public.ratings_labels_id_seq OWNED BY public.labels."labelId";
 
 CREATE TABLE public.sites_screenshots (
     "siteScreenshotId" integer NOT NULL,
-    "ratingId" integer,
     "siteId" integer,
     url text DEFAULT ''::text,
     "errorMessage" jsonb DEFAULT '""'::jsonb,
