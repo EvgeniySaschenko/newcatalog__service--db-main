@@ -185,6 +185,43 @@ ALTER SEQUENCE public.ratings_labels_id_seq OWNED BY public.labels."labelId";
 
 
 --
+-- Name: records_deleted; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.records_deleted (
+    "recordDeletedId" integer NOT NULL,
+    "tableName" character varying(255) NOT NULL,
+    "tableId" integer NOT NULL,
+    "tableRecord" jsonb NOT NULL,
+    "dateCreate" timestamp with time zone
+);
+
+
+ALTER TABLE public.records_deleted OWNER TO postgres;
+
+--
+-- Name: records_deleted_recordDeletedId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."records_deleted_recordDeletedId_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public."records_deleted_recordDeletedId_seq" OWNER TO postgres;
+
+--
+-- Name: records_deleted_recordDeletedId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."records_deleted_recordDeletedId_seq" OWNED BY public.records_deleted."recordDeletedId";
+
+
+--
 -- Name: sites_screenshots; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -325,6 +362,13 @@ ALTER TABLE ONLY public.ratings_items ALTER COLUMN "ratingItemId" SET DEFAULT ne
 
 
 --
+-- Name: records_deleted recordDeletedId; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.records_deleted ALTER COLUMN "recordDeletedId" SET DEFAULT nextval('public."records_deleted_recordDeletedId_seq"'::regclass);
+
+
+--
 -- Name: sections sectionId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -390,6 +434,14 @@ ALTER TABLE ONLY public.labels
 
 ALTER TABLE ONLY public.ratings
     ADD CONSTRAINT ratings_pkey PRIMARY KEY ("ratingId");
+
+
+--
+-- Name: records_deleted records_deleted_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.records_deleted
+    ADD CONSTRAINT records_deleted_pkey PRIMARY KEY ("recordDeletedId");
 
 
 --
