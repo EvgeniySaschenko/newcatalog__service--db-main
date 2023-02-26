@@ -29,7 +29,8 @@ CREATE TABLE public.cache_info (
     info jsonb,
     "dateStartCreate" timestamp with time zone NOT NULL,
     "dateCreate" timestamp with time zone,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    "visitorId" integer
 );
 
 
@@ -237,7 +238,8 @@ CREATE TABLE public.records_deleted (
     "tableId" integer NOT NULL,
     "tableRecord" jsonb NOT NULL,
     "dateCreate" timestamp with time zone,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    "visitorId" integer
 );
 
 
@@ -278,7 +280,8 @@ CREATE TABLE public.sites_screenshots (
     "isUploadCustomScreenshot" boolean DEFAULT false,
     "dateScreenshotCreated" timestamp with time zone,
     "dateScreenshotError" timestamp with time zone,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    "visitorId" integer
 );
 
 
