@@ -21,44 +21,6 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
--- Name: cache_info; Type: TABLE; Schema: public; Owner: postgres
---
-
-CREATE TABLE public.cache_info (
-    "cacheInfoId" integer NOT NULL,
-    info jsonb,
-    "dateStartCreate" timestamp with time zone NOT NULL,
-    "dateCreate" timestamp with time zone,
-    "dateUpdate" timestamp with time zone,
-    "visitorId" integer
-);
-
-
-ALTER TABLE public.cache_info OWNER TO postgres;
-
---
--- Name: cache_info_cacheInfoId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
---
-
-CREATE SEQUENCE public."cache_info_cacheInfoId_seq"
-    AS integer
-    START WITH 1
-    INCREMENT BY 1
-    NO MINVALUE
-    NO MAXVALUE
-    CACHE 1;
-
-
-ALTER TABLE public."cache_info_cacheInfoId_seq" OWNER TO postgres;
-
---
--- Name: cache_info_cacheInfoId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
---
-
-ALTER SEQUENCE public."cache_info_cacheInfoId_seq" OWNED BY public.cache_info."cacheInfoId";
-
-
---
 -- Name: labels; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -91,7 +53,10 @@ CREATE TABLE public.ratings (
     "typeRating" integer DEFAULT 0,
     "typeSort" integer DEFAULT 0,
     "typeDisplay" integer DEFAULT 0,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    "dateFirstPublication" timestamp with time zone,
+    "dateCacheCreation" timestamp with time zone,
+    "sectionsIdsCache" jsonb
 );
 
 
@@ -391,13 +356,6 @@ ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
 
 
 --
--- Name: cache_info cacheInfoId; Type: DEFAULT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.cache_info ALTER COLUMN "cacheInfoId" SET DEFAULT nextval('public."cache_info_cacheInfoId_seq"'::regclass);
-
-
---
 -- Name: labels labelId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -451,14 +409,6 @@ ALTER TABLE ONLY public.sites_screenshots ALTER COLUMN "siteScreenshotId" SET DE
 --
 
 ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
-
-
---
--- Name: cache_info cache_info_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.cache_info
-    ADD CONSTRAINT cache_info_pkey PRIMARY KEY ("cacheInfoId");
 
 
 --
