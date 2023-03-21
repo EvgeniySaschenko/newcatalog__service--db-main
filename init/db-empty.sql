@@ -319,25 +319,43 @@ ALTER SEQUENCE public.sections_id_seq OWNED BY public.sections."sectionId";
 --
 
 CREATE TABLE public.users (
-    id integer NOT NULL,
-    avatar character varying(32) DEFAULT ''::character varying,
-    name character varying(100),
+    "userId" integer NOT NULL,
     mail character varying(255),
     password character varying(255) NOT NULL,
-    "accessRight" integer DEFAULT 1,
-    "visitorId" integer,
+    "userAgent" character varying(255),
+    "sessionId" character varying(255),
+    "countLoginAttempt" integer DEFAULT 0,
     "dateCreate" timestamp with time zone,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    "dateEntry" timestamp with time zone,
+    "dateLoginAttempt" timestamp with time zone
 );
 
 
 ALTER TABLE public.users OWNER TO postgres;
 
 --
--- Name: users_id_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+-- Name: users-auth; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE SEQUENCE public.users_id_seq
+CREATE TABLE public."users-auth" (
+    "userAuthId" integer NOT NULL,
+    mail character varying(255) DEFAULT NULL::character varying,
+    ip character varying(255) DEFAULT NULL::character varying,
+    "userAgent" character varying(255) DEFAULT NULL::character varying,
+    type integer DEFAULT 0,
+    "dateCreate" timestamp with time zone,
+    "dateUpdate" timestamp with time zone
+);
+
+
+ALTER TABLE public."users-auth" OWNER TO postgres;
+
+--
+-- Name: users-auth_userAuthId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."users-auth_userAuthId_seq"
     AS integer
     START WITH 1
     INCREMENT BY 1
@@ -346,13 +364,35 @@ CREATE SEQUENCE public.users_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.users_id_seq OWNER TO postgres;
+ALTER TABLE public."users-auth_userAuthId_seq" OWNER TO postgres;
 
 --
--- Name: users_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+-- Name: users-auth_userAuthId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
-ALTER SEQUENCE public.users_id_seq OWNED BY public.users.id;
+ALTER SEQUENCE public."users-auth_userAuthId_seq" OWNED BY public."users-auth"."userAuthId";
+
+
+--
+-- Name: users_userId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."users_userId_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public."users_userId_seq" OWNER TO postgres;
+
+--
+-- Name: users_userId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."users_userId_seq" OWNED BY public.users."userId";
 
 
 --
@@ -405,10 +445,17 @@ ALTER TABLE ONLY public.sites_screenshots ALTER COLUMN "siteScreenshotId" SET DE
 
 
 --
--- Name: users id; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: users userId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public.users ALTER COLUMN id SET DEFAULT nextval('public.users_id_seq'::regclass);
+ALTER TABLE ONLY public.users ALTER COLUMN "userId" SET DEFAULT nextval('public."users_userId_seq"'::regclass);
+
+
+--
+-- Name: users-auth userAuthId; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."users-auth" ALTER COLUMN "userAuthId" SET DEFAULT nextval('public."users-auth_userAuthId_seq"'::regclass);
 
 
 --
@@ -476,6 +523,14 @@ ALTER TABLE ONLY public.sections
 
 
 --
+-- Name: users-auth users-auth_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public."users-auth"
+    ADD CONSTRAINT "users-auth_pkey" PRIMARY KEY ("userAuthId");
+
+
+--
 -- Name: users users_mail_key; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
@@ -484,19 +539,19 @@ ALTER TABLE ONLY public.users
 
 
 --
--- Name: users users_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.users
-    ADD CONSTRAINT users_name_key UNIQUE (name);
-
-
---
 -- Name: users users_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
 ALTER TABLE ONLY public.users
-    ADD CONSTRAINT users_pkey PRIMARY KEY (id);
+    ADD CONSTRAINT users_pkey PRIMARY KEY ("userId");
+
+
+--
+-- Name: users users_sessionId_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.users
+    ADD CONSTRAINT "users_sessionId_key" UNIQUE ("sessionId");
 
 
 --
