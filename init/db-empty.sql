@@ -320,7 +320,7 @@ ALTER SEQUENCE public.sections_id_seq OWNED BY public.sections."sectionId";
 
 CREATE TABLE public.users (
     "userId" integer NOT NULL,
-    mail character varying(255),
+    email character varying(255),
     password character varying(255) NOT NULL,
     "userAgent" character varying(255),
     "sessionId" character varying(255),
@@ -340,12 +340,14 @@ ALTER TABLE public.users OWNER TO postgres;
 
 CREATE TABLE public."users-auth" (
     "userAuthId" integer NOT NULL,
-    mail character varying(255) DEFAULT NULL::character varying,
+    email character varying(255) DEFAULT NULL::character varying,
     ip character varying(255) DEFAULT NULL::character varying,
     "userAgent" character varying(255) DEFAULT NULL::character varying,
     type integer DEFAULT 0,
     "dateCreate" timestamp with time zone,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    "userId" integer,
+    "sessionId" character varying(255)
 );
 
 
@@ -535,7 +537,7 @@ ALTER TABLE ONLY public."users-auth"
 --
 
 ALTER TABLE ONLY public.users
-    ADD CONSTRAINT users_mail_key UNIQUE (mail);
+    ADD CONSTRAINT users_mail_key UNIQUE (email);
 
 
 --
