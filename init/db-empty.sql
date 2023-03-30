@@ -315,6 +315,43 @@ ALTER SEQUENCE public.sections_id_seq OWNED BY public.sections."sectionId";
 
 
 --
+-- Name: settings; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.settings (
+    "settingId" integer NOT NULL,
+    name character varying(255) NOT NULL,
+    value jsonb,
+    "dateCreate" timestamp with time zone,
+    "dateUpdate" timestamp with time zone
+);
+
+
+ALTER TABLE public.settings OWNER TO postgres;
+
+--
+-- Name: settings_settingId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."settings_settingId_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public."settings_settingId_seq" OWNER TO postgres;
+
+--
+-- Name: settings_settingId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."settings_settingId_seq" OWNED BY public.settings."settingId";
+
+
+--
 -- Name: users; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -433,6 +470,13 @@ ALTER TABLE ONLY public.sections ALTER COLUMN "sectionId" SET DEFAULT nextval('p
 
 
 --
+-- Name: settings settingId; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.settings ALTER COLUMN "settingId" SET DEFAULT nextval('public."settings_settingId_seq"'::regclass);
+
+
+--
 -- Name: sites siteId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -522,6 +566,22 @@ ALTER TABLE ONLY public.sites_screenshots
 
 ALTER TABLE ONLY public.sections
     ADD CONSTRAINT sections_pkey PRIMARY KEY ("sectionId");
+
+
+--
+-- Name: settings settings_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.settings
+    ADD CONSTRAINT settings_name_key UNIQUE (name);
+
+
+--
+-- Name: settings settings_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.settings
+    ADD CONSTRAINT settings_pkey PRIMARY KEY ("settingId");
 
 
 --
