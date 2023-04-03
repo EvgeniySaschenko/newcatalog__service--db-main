@@ -352,6 +352,44 @@ ALTER SEQUENCE public."settings_settingId_seq" OWNED BY public.settings."setting
 
 
 --
+-- Name: translations; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.translations (
+    "translationId" integer NOT NULL,
+    key text NOT NULL,
+    text jsonb DEFAULT '{"ru": "", "ua": ""}'::jsonb,
+    type integer NOT NULL,
+    "dateCreate" timestamp with time zone,
+    "dateUpdate" timestamp with time zone
+);
+
+
+ALTER TABLE public.translations OWNER TO postgres;
+
+--
+-- Name: translations_translationId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."translations_translationId_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public."translations_translationId_seq" OWNER TO postgres;
+
+--
+-- Name: translations_translationId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."translations_translationId_seq" OWNED BY public.translations."translationId";
+
+
+--
 -- Name: users; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -491,6 +529,13 @@ ALTER TABLE ONLY public.sites_screenshots ALTER COLUMN "siteScreenshotId" SET DE
 
 
 --
+-- Name: translations translationId; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.translations ALTER COLUMN "translationId" SET DEFAULT nextval('public."translations_translationId_seq"'::regclass);
+
+
+--
 -- Name: users userId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -582,6 +627,14 @@ ALTER TABLE ONLY public.settings
 
 ALTER TABLE ONLY public.settings
     ADD CONSTRAINT settings_pkey PRIMARY KEY ("settingId");
+
+
+--
+-- Name: translations translations_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.translations
+    ADD CONSTRAINT translations_pkey PRIMARY KEY ("translationId");
 
 
 --

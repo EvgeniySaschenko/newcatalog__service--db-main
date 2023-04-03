@@ -1,5 +1,7 @@
-node_modules
-tmp
-data
-db-data.sql
-db-empty.sql
+*
+!.gitignore
+!Dockerfile
+!init
+!init/1.db-empty.sql
+!init/2.translations-drop-table.sql
+!init/3.translations-data.sql
