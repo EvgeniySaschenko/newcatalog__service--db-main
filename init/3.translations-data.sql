@@ -28,7 +28,7 @@ CREATE TABLE public.translations (
     "translationId" integer NOT NULL,
     key text NOT NULL,
     text jsonb DEFAULT '{"ru": "", "ua": ""}'::jsonb,
-    type integer NOT NULL,
+    "serviceType" integer NOT NULL,
     "dateCreate" timestamp with time zone,
     "dateUpdate" timestamp with time zone
 );
@@ -69,7 +69,7 @@ ALTER TABLE ONLY public.translations ALTER COLUMN "translationId" SET DEFAULT ne
 -- Data for Name: translations; Type: TABLE DATA; Schema: public; Owner: postgres
 --
 
-COPY public.translations ("translationId", key, text, type, "dateCreate", "dateUpdate") FROM stdin;
+COPY public.translations ("translationId", key, text, "serviceType", "dateCreate", "dateUpdate") FROM stdin;
 1	Server error	{"ru": "", "ua": ""}	3	2023-04-03 17:45:00.654+00	2023-04-03 17:45:00.654+00
 2	Page not found	{"ru": "", "ua": ""}	3	2023-04-03 17:45:00.656+00	2023-04-03 17:45:00.656+00
 3	Go to home	{"ru": "", "ua": ""}	3	2023-04-03 17:45:00.658+00	2023-04-03 17:45:00.658+00

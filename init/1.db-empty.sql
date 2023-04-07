@@ -320,7 +320,7 @@ ALTER SEQUENCE public.sections_id_seq OWNED BY public.sections."sectionId";
 
 CREATE TABLE public.settings (
     "settingId" integer NOT NULL,
-    name character varying(255) NOT NULL,
+    type character varying(255) NOT NULL,
     value jsonb,
     "dateCreate" timestamp with time zone,
     "dateUpdate" timestamp with time zone
@@ -359,7 +359,7 @@ CREATE TABLE public.translations (
     "translationId" integer NOT NULL,
     key text NOT NULL,
     text jsonb DEFAULT '{"ru": "", "ua": ""}'::jsonb,
-    type integer NOT NULL,
+    "serviceType" integer NOT NULL,
     "dateCreate" timestamp with time zone,
     "dateUpdate" timestamp with time zone
 );
@@ -618,7 +618,7 @@ ALTER TABLE ONLY public.sections
 --
 
 ALTER TABLE ONLY public.settings
-    ADD CONSTRAINT settings_name_key UNIQUE (name);
+    ADD CONSTRAINT settings_name_key UNIQUE (type);
 
 
 --
