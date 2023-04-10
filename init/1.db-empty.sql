@@ -320,8 +320,9 @@ ALTER SEQUENCE public.sections_id_seq OWNED BY public.sections."sectionId";
 
 CREATE TABLE public.settings (
     "settingId" integer NOT NULL,
-    type character varying(255) NOT NULL,
-    value jsonb,
+    "settingName" character varying(255) NOT NULL,
+    "serviceType" integer NOT NULL,
+    "settingValue" jsonb,
     "dateCreate" timestamp with time zone,
     "dateUpdate" timestamp with time zone
 );
@@ -611,14 +612,6 @@ ALTER TABLE ONLY public.sites_screenshots
 
 ALTER TABLE ONLY public.sections
     ADD CONSTRAINT sections_pkey PRIMARY KEY ("sectionId");
-
-
---
--- Name: settings settings_name_key; Type: CONSTRAINT; Schema: public; Owner: postgres
---
-
-ALTER TABLE ONLY public.settings
-    ADD CONSTRAINT settings_name_key UNIQUE (type);
 
 
 --
