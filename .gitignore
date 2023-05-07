@@ -5,3 +5,6 @@
 !init/1.db-empty.sql
 !init/2.translations-drop-table.sql
 !init/3.translations-data.sql
+!backup
+!backup/.gitignore
+!server.js
