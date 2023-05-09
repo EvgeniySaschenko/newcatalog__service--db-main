@@ -21,6 +21,43 @@ SET default_tablespace = '';
 SET default_table_access_method = heap;
 
 --
+-- Name: backups; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.backups (
+    "backupId" integer NOT NULL,
+    "isError" boolean DEFAULT false,
+    report jsonb,
+    "dateCreate" timestamp with time zone,
+    "dateUpdate" timestamp with time zone
+);
+
+
+ALTER TABLE public.backups OWNER TO postgres;
+
+--
+-- Name: backups_backupId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."backups_backupId_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public."backups_backupId_seq" OWNER TO postgres;
+
+--
+-- Name: backups_backupId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."backups_backupId_seq" OWNED BY public.backups."backupId";
+
+
+--
 -- Name: labels; Type: TABLE; Schema: public; Owner: postgres
 --
 
@@ -474,6 +511,13 @@ ALTER SEQUENCE public."users_userId_seq" OWNED BY public.users."userId";
 
 
 --
+-- Name: backups backupId; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.backups ALTER COLUMN "backupId" SET DEFAULT nextval('public."backups_backupId_seq"'::regclass);
+
+
+--
 -- Name: labels labelId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -548,6 +592,14 @@ ALTER TABLE ONLY public.users ALTER COLUMN "userId" SET DEFAULT nextval('public.
 --
 
 ALTER TABLE ONLY public."users-auth" ALTER COLUMN "userAuthId" SET DEFAULT nextval('public."users-auth_userAuthId_seq"'::regclass);
+
+
+--
+-- Name: backups backups_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.backups
+    ADD CONSTRAINT backups_pkey PRIMARY KEY ("backupId");
 
 
 --
