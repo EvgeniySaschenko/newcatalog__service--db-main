@@ -93,7 +93,8 @@ CREATE TABLE public.ratings (
     "dateUpdate" timestamp with time zone,
     "dateFirstPublication" timestamp with time zone,
     "dateCacheCreation" timestamp with time zone,
-    "sectionsIdsCache" jsonb
+    "sectionsIdsCache" jsonb,
+    "linksToSources" jsonb DEFAULT '[]'::jsonb
 );
 
 
