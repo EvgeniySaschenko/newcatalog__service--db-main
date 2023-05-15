@@ -72,10 +72,8 @@ ALTER TABLE ONLY public.translations ALTER COLUMN "translationId" SET DEFAULT ne
 COPY public.translations ("translationId", key, text, "serviceType", "dateCreate", "dateUpdate") FROM stdin;
 60	Select screenshot	{"en": "Select screenshot", "ru": "Выбрать скриншот", "uk": "Виберіть скріншот"}	2	2023-04-03 17:45:03.924+00	2023-05-15 11:16:44.943+00
 82	Send	{"en": "Send", "ru": "Отправить", "uk": "Надіслати"}	2	2023-04-03 17:45:03.96+00	2023-05-15 11:19:29.324+00
-27	Site color	{"en": "Site color", "ru": "Цвет сайта", "uk": "Колір сайту"}	2	2023-04-03 17:45:03.863+00	2023-05-15 11:24:25.892+00
 35	There are no logos or screenshots for this domain	{"en": "There are no logos or screenshots for this domain", "ru": "Для этого домена нет логотипов или скриншотов", "uk": "Для цього домену немає логотипів чи скріншотів"}	2	2023-04-03 17:45:03.879+00	2023-05-15 12:01:47.242+00
 338	SSL certificates	{"en": "SSL certificates", "ru": "SSL-сертификаты", "uk": "SSL сертифікати"}	2	2023-05-15 11:29:31.526+00	2023-05-15 11:38:00.14+00
-57	There are no screenshots for this site	{"en": "There are no screenshots for this site", "ru": "Для этого сайта нет скриншотов", "uk": "Для цього сайту немає скріншотів"}	2	2023-04-03 17:45:03.919+00	2023-05-15 12:02:27.142+00
 19	Update	{"en": "Update", "ru": "Обновить", "uk": "Оновити"}	2	2023-04-03 17:45:03.848+00	2023-05-15 12:26:58.156+00
 71	User profile	{"en": "User profile", "ru": "Профиль пользователя", "uk": "Профіль користувача"}	2	2023-04-03 17:45:03.943+00	2023-05-15 12:29:36.383+00
 59	Upload screenshot manually	{"en": "Upload screenshot manually", "ru": "Загрузить скриншот вручную", "uk": "Завантажити скріншот вручну"}	2	2023-04-03 17:45:03.922+00	2023-05-15 12:28:36.487+00
@@ -84,7 +82,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 6	Refresh page	{"en": "Refresh page", "ru": "Обновить страницу", "uk": "Оновити сторінку"}	3	2023-04-03 17:45:00.665+00	2023-05-14 22:48:10.251+00
 9	Section	{"en": "Section", "ru": "Раздел", "uk": "Розділ"}	3	2023-04-03 17:45:00.671+00	2023-05-14 22:48:33.258+00
 37	A screenshot for this domain is in the process of being created	{"en": "A screenshot for this domain is in the process of being created", "ru": "Скриншот для этого домена находится в процессе создания", "uk": "Скріншот для цього домену в процесі створення"}	2	2023-04-03 17:45:03.883+00	2023-05-14 22:54:19.354+00
-18	Add site	{"en": "Add site", "ru": "Добавить сайт", "uk": "Додати сайт"}	2	2023-04-03 17:45:03.847+00	2023-05-14 22:56:53.184+00
 22	Based on current screenshot	{"en": "Based on current screenshot", "ru": "На основе текущего скриншота", "uk": "На основі поточного скріншоту"}	2	2023-04-03 17:45:03.853+00	2023-05-14 23:17:37.02+00
 78	Cache created	{"en": "Cache created", "ru": "Кэш создан", "uk": "Кеш створено"}	2	2023-04-03 17:45:03.953+00	2023-05-14 23:20:16.162+00
 79	Cache deleted	{"en": "Cache deleted", "ru": "Кэш удален", "uk": "Кеш видалено"}	2	2023-04-03 17:45:03.954+00	2023-05-14 23:20:43.235+00
@@ -96,7 +93,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 77	Delete cache	{"en": "Delete cache", "ru": "Удалить кеш", "uk": "Видалити кеш"}	2	2023-04-03 17:45:03.952+00	2023-05-14 23:56:22.546+00
 14	Description	{"en": "Description", "ru": "Описание", "uk": "Опис"}	2	2023-04-03 17:45:03.839+00	2023-05-14 23:57:21.833+00
 34	Domain	{"en": "Domain", "ru": "Домен", "uk": "Домен"}	2	2023-04-03 17:45:03.877+00	2023-05-15 00:01:04.448+00
-17	Edit site	{"en": "Edit site", "ru": "Редактировать сайт", "uk": "Редагувати сайт"}	2	2023-04-03 17:45:03.845+00	2023-05-15 00:06:33.173+00
 10	Exit	{"en": "Exit", "ru": "Выход", "uk": "Вихід"}	2	2023-04-03 17:45:03.832+00	2023-05-15 00:08:24.999+00
 47	Hide	{"en": "Hide", "ru": "Скрыть", "uk": "Сховати"}	2	2023-04-03 17:45:03.901+00	2023-05-15 09:47:40.858+00
 43	Link	{"en": "Link", "ru": "Ссылка", "uk": "Посилання"}	2	2023-04-03 17:45:03.894+00	2023-05-15 10:20:53.924+00
@@ -116,7 +112,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 15	Screenshot	{"en": "Screenshot", "ru": "Скриншот", "uk": "Скріншот"}	2	2023-04-03 17:45:03.841+00	2023-05-15 11:07:37.062+00
 69	Sections list	{"en": "Sections list", "ru": "Список разделов", "uk": "Список розділів"}	2	2023-04-03 17:45:03.939+00	2023-05-15 11:15:51.183+00
 335	Selection color - background	{"en": "Selection color - background", "ru": "Цвет выделения - фон", "uk": "Колір виділення - фон"}	2	2023-05-15 11:17:14.642+00	2023-05-15 11:17:49.242+00
-123	Sites	{"en": "Sites", "ru": "Сайты", "uk": "Сайти"}	2	2023-04-03 17:45:04.028+00	2023-05-15 11:26:02.05+00
 131	The rating is not displayed on the website	{"en": "The rating is not displayed on the website", "ru": "Рейтинг не отображается на сайте", "uk": "Рейтинг не відображається на сайті"}	2	2023-04-03 17:45:04.041+00	2023-05-15 11:48:17.79+00
 121	Tile	{"en": "Tile", "ru": "Плитка", "uk": "Плитка"}	2	2023-04-03 17:45:04.023+00	2023-05-15 12:12:55.174+00
 103	Update list	{"en": "Update list", "ru": "Обновить список", "uk": "Оновити список"}	2	2023-04-03 17:45:03.996+00	2023-05-15 12:27:31.266+00
@@ -156,7 +151,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 111	Publish	{"en": "Publish", "ru": "Опубликовать", "uk": "Опублікувати"}	2	2023-04-03 17:45:04.009+00	2023-05-15 10:41:05.041+00
 130	Rating published	{"en": "Rating published", "ru": "Рейтинг опубликован", "uk": "Рейтинг опубліковано"}	2	2023-04-03 17:45:04.039+00	2023-05-15 10:44:33.366+00
 106	Rating type	{"en": "Rating type", "ru": "Тип рейтинга", "uk": "Тип рейтингу"}	2	2023-04-03 17:45:04.001+00	2023-05-15 10:44:55.353+00
-110	Remove from site	{"en": "Remove from site", "ru": "Удалить с сайта", "uk": "Видалити з сайту"}	2	2023-04-03 17:45:04.007+00	2023-05-15 10:49:00.564+00
 93	Screenshots of the error	{"en": "Screenshots of the error", "ru": "Скриншоты ошибки", "uk": "Скріншоти помилки"}	2	2023-04-03 17:45:03.977+00	2023-05-15 11:11:53.964+00
 105	Sections	{"en": "Sections", "ru": "Разделы", "uk": "Розділи"}	2	2023-04-03 17:45:04+00	2023-05-15 11:15:27.004+00
 218	Source links	{"en": "Source links", "ru": "Ссылки на источники", "uk": "Посилання на джерела"}	2	2023-05-14 22:39:16.107+00	2023-05-15 11:27:54.829+00
@@ -177,7 +171,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 197	Backups report	{"en": "Backups report", "ru": "Отчет о резервных копиях", "uk": "Звіт про резервне копіювання"}	2	2023-05-14 22:39:16.058+00	2023-05-14 23:17:02.544+00
 156	Change password	{"en": "Change password", "ru": "Изменить пароль", "uk": "Змінити пароль"}	2	2023-04-03 17:45:04.085+00	2023-05-14 23:24:46.75+00
 213	Create cache for sections?	{"en": "Create cache for sections?", "ru": "Создать кеш для разделов?", "uk": "Створити кеш для розділів?"}	2	2023-05-14 22:39:16.089+00	2023-05-14 23:46:02.466+00
-214	Create cache settings site?	{"en": "Create cache settings site?", "ru": "Создать кеш настоек?", "uk": "Створити кеш налаштувань?"}	2	2023-05-14 22:39:16.091+00	2023-05-14 23:51:07.026+00
 200	Date create	{"en": "Date create", "ru": "Дата создания", "uk": "Дата створення"}	2	2023-05-14 22:39:16.063+00	2023-05-14 23:52:59.193+00
 210	Delete all cache?	{"en": "Delete all cache?", "ru": "Удалить весь кеш?", "uk": "Видалити весь кеш?"}	2	2023-05-14 22:39:16.084+00	2023-05-14 23:55:32.824+00
 201	Error	{"en": "Error", "ru": "Ошибка", "uk": "Помилка"}	2	2023-05-14 22:39:16.065+00	2023-05-15 00:06:51.164+00
@@ -195,6 +188,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 181	This field cannot be empty	{"en": "This field cannot be empty", "ru": "Это поле не может быть пустым", "uk": "Це поле не може бути порожнім"}	1	2023-04-03 17:45:06.481+00	2023-05-15 12:56:04.699+00
 176	Value must be e-mail	{"en": "Value must be e-mail", "ru": "Значение должно быть e-mail", "uk": "Значення має бути e-mail"}	1	2023-04-03 17:45:06.471+00	2023-05-15 12:57:12.374+00
 351	#Title main page	{"en": "Internet service rating", "ru": "Рейтинг интернет-сервисов", "uk": "Рейтинг інтернет-сервісів"}	3	2023-05-15 18:15:17.139+00	2023-05-15 18:15:58.988+00
+354	Add website	{"en": "Add website", "ru": "Добавить веб-сайт", "uk": "Додати веб-сайт"}	2	2023-05-15 20:08:55.499+00	2023-05-15 20:09:34.508+00
 248	The key (string) that the server should return in the response if requests to the API server are allowed	{"en": "The key (string) that the server should return in the response if requests to the API server are allowed", "ru": "Ключ (строка), который сервер должен вернуть в ответе, если запросы к серверу API разрешены", "uk": "Ключ (рядок), який сервер має повернути у відповідь, якщо запити до сервера API дозволені"}	2	2023-05-14 22:39:16.172+00	2023-05-15 11:45:15.954+00
 268	The phrase that will be added at the beginning of the "title" tag	{"en": "The phrase that will be added at the beginning of the \\"title\\" tag", "ru": "Фраза, которая будет добавлена в начало тега title", "uk": "Фраза, яка буде додана на початку тегу \\"title\\""}	2	2023-05-14 22:39:16.208+00	2023-05-15 11:45:40.899+00
 262	This CSS will be added to the "head" tag	{"en": "This CSS will be added to the \\"head\\" tag", "ru": "Этот CSS будет добавлен к тегу «head».", "uk": "Цей CSS буде додано до тегу \\"head\\"."}	2	2023-05-14 22:39:16.196+00	2023-05-15 12:04:49.431+00
@@ -207,7 +201,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 293	Invalid SSL private key	{"en": "Invalid SSL private key", "ru": "Некорректный приватный ключ SSL", "uk": "Некоректний приватний ключ SSL"}	1	2023-05-14 22:39:20.589+00	2023-05-15 12:45:51.62+00
 288	Not valid setting	{"en": "Not valid setting", "ru": "Недействительная настройка", "uk": "Недійсне налаштування"}	1	2023-05-14 22:39:20.574+00	2023-05-15 12:47:53.458+00
 289	The server must be available	{"en": "The server must be available", "ru": "Сервер должен быть доступен", "uk": "Сервер має бути доступним"}	1	2023-05-14 22:39:20.576+00	2023-05-15 12:53:14.586+00
-352	Image default (If the image does not exist)	{"en": "", "ru": "", "uk": ""}	2	2023-05-15 19:12:43.575+00	2023-05-15 19:12:43.575+00
 249	Any string	{"en": "Any string", "ru": "Любая строка", "uk": "Будь-який рядок"}	2	2023-05-14 22:39:16.174+00	2023-05-14 23:06:34.662+00
 236	Backup	{"en": "Backup", "ru": "Бэкап", "uk": "Резервне копіювання"}	2	2023-05-14 22:39:16.154+00	2023-05-14 23:16:27.092+00
 255	Color primary	{"en": "Color primary", "ru": "Основной цвет", "uk": "Основний колір"}	2	2023-05-14 22:39:16.184+00	2023-05-14 23:38:02.842+00
@@ -247,7 +240,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 282	Certificates will change for the mode in which the "production" / "development" server is running	{"en": "Certificates will change for the mode in which the \\"production\\" / \\"development\\" server is running", "ru": "Сертификаты изменятся для режима, в котором работает сервер  \\"production\\" / \\"development\\"", "uk": "Сертифікати змінюються для режиму, в якому запущений сервер \\"production\\" / \\"development\\""}	2	2023-05-14 22:39:16.232+00	2023-05-14 23:23:28.578+00
 28	Change color	{"en": "Change color", "ru": "Изменить цвет", "uk": "Змінити колір"}	2	2023-04-03 17:45:03.865+00	2023-05-14 23:24:26.177+00
 33	A logo can be created on the "Create a logo" tab	{"en": "A logo can be created on the \\"Create a logo\\" tab", "ru": "Логотип можно создать на вкладке \\"Создать логотип\\"", "uk": "Логотип можна створити на вкладці \\"Створити логотип\\""}	2	2023-04-03 17:45:03.874+00	2023-05-14 23:28:35.248+00
-306	Changes will be displayed on the "site" after the cache is published	{"en": "Changes will be displayed on the \\"site\\" after the cache is published", "ru": "Изменения отобразятся на \\"сайте\\" после публикации кеша", "uk": "Зміни будуть відображені на \\"сайті\\" після публікації кеша."}	2	2023-05-14 23:29:01.674+00	2023-05-14 23:30:04.503+00
 36	Check	{"en": "Check", "ru": "Проверить", "uk": "Перевірити"}	2	2023-04-03 17:45:03.881+00	2023-05-14 23:31:43.687+00
 31	Check for availability	{"en": "Check for availability", "ru": "Проверить наличие", "uk": "Перевірити наявність"}	2	2023-04-03 17:45:03.87+00	2023-05-14 23:32:59.402+00
 307	Clearing this field will generate a new key	{"en": "Clearing this field will generate a new key", "ru": "Очистка этого поля приведет к созданию нового ключа", "uk": "Якщо очистити це поле, буде створено новий ключ"}	2	2023-05-14 23:33:31.604+00	2023-05-14 23:34:19.115+00
@@ -258,7 +250,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 312	Create cache sections	{"en": "Create cache sections", "ru": "Создать кеш разделов", "uk": "Створити кеш розділів"}	2	2023-05-14 23:48:11.948+00	2023-05-14 23:50:02.62+00
 208	Create cache settings	{"en": "Create cache settings", "ru": "Создать кеш настоек", "uk": "Створити кеш налаштувань"}	2	2023-05-14 22:39:16.077+00	2023-05-14 23:50:29.472+00
 75	Rebuild all cache	{"en": "Rebuild all cache", "ru": "Перестроить весь кэш", "uk": "Перебудувати весь кеш"}	2	2023-04-03 17:45:03.949+00	2023-05-15 10:47:29.974+00
-204	Creating / deleting a cache implies that these changes will be published on the main site	{"en": "Creating / deleting a cache implies that these changes will be published on the main site", "ru": "Создание/удаление кеша подразумевает, что эти изменения будут опубликованы на основном сайте", "uk": "Створення/видалення кешу означає, що ці зміни будуть опубліковані на основному сайті"}	2	2023-05-14 22:39:16.07+00	2023-05-14 23:52:11.715+00
 134	Date of first publication	{"en": "Date of first publication", "ru": "Дата первой публикации", "uk": "Дата першої публікації"}	2	2023-04-03 17:45:04.047+00	2023-05-14 23:53:35.981+00
 76	Delete all cache	{"en": "Delete all cache", "ru": "Удалить весь кеш", "uk": "Видалити весь кеш"}	2	2023-04-03 17:45:03.95+00	2023-05-14 23:55:03.751+00
 313	Directory path	{"en": "Directory path", "ru": "Путь к директории", "uk": "Шлях до каталогу"}	2	2023-05-14 23:59:36.133+00	2023-05-15 00:00:18.649+00
@@ -271,7 +262,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 21	For a subdomain, you can try to find the logo that is used for the domain	{"en": "For a subdomain, you can try to find the logo that is used for the domain", "ru": "Для субдомена вы можете попробовать найти логотип, который используется для домена", "uk": "Для субдомену ви можете спробувати знайти логотип, який використовується для домену"}	2	2023-04-03 17:45:03.852+00	2023-05-15 00:12:23.611+00
 99	Edit Label	{"en": "Edit Label", "ru": "Изменить ярлык", "uk": "Редагувати ярлык"}	2	2023-04-03 17:45:03.987+00	2023-05-15 10:13:18.197+00
 23	For subdomains, screenshots are not generated automatically, because the logos for the domain and subdomain can be the same	{"en": "For subdomains, screenshots are not generated automatically, because the logos for the domain and subdomain can be the same", "ru": "Для поддоменов скриншоты не создаются автоматически, т.к. логотипы для домена и субдомена могут совпадать", "uk": "Для субдоменів скріншоти не створюються автоматично, оскільки логотипи для домену та субдомену можуть бути однаковими"}	2	2023-04-03 17:45:03.855+00	2023-05-15 09:43:13.292+00
-321	For the "error page" of the site the local colors will be used	{"en": "For the \\"error page\\" of the site the local colors will be used", "ru": "Для \\"страницы ошибок\\" сайта, будут использоваться локальние цвета", "uk": "Для \\"сторінки помилок\\" сайта, будуть використані локальні кольори"}	2	2023-05-15 09:44:40.289+00	2023-05-15 09:47:18.144+00
 322	Go to Main Page	{"en": "Go to Main Page", "ru": "На главную страницу", "uk": "На головну сторінку"}	3	2023-05-15 09:49:40.128+00	2023-05-15 09:50:23.467+00
 117	If the rating is hidden	{"en": "If the rating is hidden", "ru": "Якщо рейтинг прихований", "uk": "Если рейтинг скрыт"}	2	2023-04-03 17:45:04.018+00	2023-05-15 09:51:34.25+00
 324	If the server "protector" is unavailable, you will not be able to access the admin panel	{"en": "If the server \\"protector\\" is unavailable, you will not be able to access the admin panel", "ru": "Если сервер \\"protector\\" недоступен, вы не сможете получить доступ к панели администратора", "uk": "Якщо сервер \\"protector\\" недоступний, ви не зможете отримати доступ до панелі адміністратора"}	2	2023-05-15 09:54:17.643+00	2023-05-15 09:55:21.188+00
@@ -292,21 +282,15 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 333	Screenshots are not created automatically for subdomains	{"en": "Screenshots are not created automatically for subdomains", "ru": "Для субдоменов скриншоты не создаются автоматически ", "uk": "Для субдоменів скриншоти не створюються автоматично"}	2	2023-05-15 11:09:28.216+00	2023-05-15 11:11:19.212+00
 246	Server url that allows / forbids sending requests to the API server	{"en": "Server url that allows / forbids sending requests to the API server", "ru": "URL-адрес сервера, который разрешает/запрещает отправку запросов на сервер API", "uk": "URL-адреса сервера, який дозволяє/забороняє надсилати запити на сервер API"}	2	2023-05-14 22:39:16.17+00	2023-05-15 11:22:24.925+00
 304	Settings	{"en": "Settings", "ru": "Настройки", "uk": "Налаштування"}	2	2023-05-14 23:11:03.297+00	2023-05-15 11:24:08.011+00
-41	Site color updated	{"en": "Site color updated", "ru": "Цвет сайта обновлен", "uk": "Оновлено колір сайту"}	2	2023-04-03 17:45:03.889+00	2023-05-15 11:25:37.425+00
-314	Sites will be displayed in the language you selected in the language switcher	{"en": "Sites will be displayed in the language you selected in the language switcher", "ru": "Сайты будут отображаться на том языке, который вы выбрали в переключателе языков.", "uk": "Сайти відображатимуться мовою, яку ви вибрали в перемикачі мов"}	2	2023-05-15 00:10:46.057+00	2023-05-15 11:27:02.588+00
 108	Sorting	{"en": "Sorting", "ru": "Сортировка", "uk": "Сортування"}	2	2023-04-03 17:45:04.004+00	2023-05-15 11:27:22.62+00
 340	SSL private key	{"en": "SSL private key", "ru": "Приватный ключ SSL", "uk": "Приватний ключ SSL"}	2	2023-05-15 11:29:31.537+00	2023-05-15 11:31:05.399+00
 339	SSL сertificate	{"en": "SSL сertificate", "ru": "SSL-сертификат", "uk": "SSL сертифікат"}	2	2023-05-15 11:29:31.536+00	2023-05-15 11:31:30.225+00
 216	Started sending files to a remote server	{"en": "Started sending files to a remote server", "ru": "Началась отправка файлов на удаленный сервер", "uk": "Розпочато надсилання файлів на віддалений сервер"}	2	2023-05-14 22:39:16.093+00	2023-05-15 11:32:16.122+00
 58	Take new screenshot	{"en": "Take new screenshot", "ru": "Сделать новый скриншот", "uk": "Зробити новий скріншот"}	2	2023-04-03 17:45:03.921+00	2023-05-15 11:33:43.391+00
-315	Texts for the main site, in the admin panel will be displayed in the default language for the main site	{"en": "Texts for the main site, in the admin panel will be displayed in the default language for the main site", "ru": "Тексты для основного сайта, в админ панели будут отображаться на языке по умолчанию для основного сайта", "uk": "Тексти для основного сайту в адмінпанелі будуть відображатися мовою за замовчуванням для основного сайту"}	2	2023-05-15 00:10:46.06+00	2023-05-15 11:34:33.4+00
 24	The domain images will be linked to the subdomain	{"en": "The domain images will be linked to the subdomain", "ru": "Изображения домена будут привязаны к субдомену", "uk": "Зображення домену будуть прив’язані до субдомену"}	2	2023-04-03 17:45:03.857+00	2023-05-15 11:35:13.294+00
 342	Favicon will change immediately after saving the settings	{"en": "Favicon will change immediately after saving the settings", "ru": "Favicon изменится сразу после сохранения настроек", "uk": "Favicon зміниться відразу після збереження налаштувань"}	2	2023-05-15 11:43:21.583+00	2023-05-15 11:44:26.337+00
 344	The rating cannot be published if:	{"en": "The rating cannot be published if:", "ru": "Рейтинг не может быть опубликован, если:", "uk": "Рейтинг не може бути опублікований, якщо:"}	2	2023-05-15 11:46:52.659+00	2023-05-15 11:47:32.947+00
 196	The router does not have a key that is used in the main menu	{"en": "The router does not have a key that is used in the main menu", "ru": "В роутере нет ключа, которий используется в главном меню", "uk": "У роутера немає ключа, який використовується в головному меню"}	2	2023-05-14 22:39:16.027+00	2023-05-15 11:52:42.843+00
-63	The site has been added to the queue for taking a screenshot	{"en": "The site has been added to the queue for taking a screenshot", "ru": "Сайт добавлен в очередь на создание скриншота", "uk": "Сайт додано в чергу для створення скріншота"}	2	2023-04-03 17:45:03.93+00	2023-05-15 11:54:44.822+00
-346	The site is in queue for taking a screenshot	{"en": "The site is in queue for taking a screenshot", "ru": "Сайт находится в очереди на создание скриншота", "uk": "Сайт знаходиться у черзі на створення скріншота"}	2	2023-05-15 11:59:51.761+00	2023-05-15 12:01:21.117+00
-62	There is already a screenshot for this site. Create new?	{"en": "There is already a screenshot for this site. Create new?", "ru": "Для этого сайта уже есть скриншот. Создайте новый?", "uk": "Для цього сайту вже є скріншот. Створити новий?"}	2	2023-04-03 17:45:03.929+00	2023-05-15 12:03:25.151+00
 38	There is already another image associated with the domain	{"en": "There is already another image associated with the domain", "ru": "С доменом уже связано другое изображение", "uk": "З доменом уже пов’язано інше зображення"}	2	2023-04-03 17:45:03.885+00	2023-05-15 12:04:07.229+00
 211	There were errors while creating the cache	{"en": "При создании кеша возникли ошибки", "ru": "При создании кеша возникли ошибки", "uk": "Під час створення кешу виникли помилки"}	2	2023-05-14 22:39:16.086+00	2023-05-15 12:04:28.862+00
 291	Not valid lang	{"en": "Not valid lang", "ru": "Недействительный язык", "uk": "Недійсна мова"}	1	2023-05-14 22:39:20.582+00	2023-05-15 12:47:26.036+00
@@ -333,10 +317,26 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 297	The value must be "http" / "https" link	{"en": "The value must be \\"http\\" / \\"https\\" link", "ru": "Значение должно быть ссылкой \\"http\\" / \\"https\\"", "uk": "Значенням має бути посилання \\"http\\" / \\"https\\"."}	1	2023-05-14 22:39:20.606+00	2023-05-15 12:54:12.097+00
 286	There are no items in the rating to publish, or it is hidden	{"en": "There are no items in the rating to publish, or it is hidden", "ru": "В рейтинге нет элементов для публикации, или он скрыт", "uk": "У рейтингу немає пунктів для публікації, або він прихований"}	1	2023-05-14 22:39:20.561+00	2023-05-15 12:54:41.759+00
 177	This e-mail already exists	{"en": "This e-mail already exists", "ru": "Такой e-mail уже существует", "uk": "Такий e-mail вже існує"}	1	2023-04-03 17:45:06.473+00	2023-05-15 12:55:25.685+00
-172	This site is currently in the screenshot queue	{"en": "This site is currently in the screenshot queue", "ru": "Этот сайт в настоящее время находится в очереди на создание скриншотов", "uk": "Цей сайт наразі в черзі на знімок екрана"}	1	2023-04-03 17:45:06.465+00	2023-05-15 12:56:28.028+00
 162	Wrong data format	{"en": "Wrong data format", "ru": "Неправильный формат данных", "uk": "Неправильний формат даних"}	1	2023-04-03 17:45:06.446+00	2023-05-15 12:57:47.533+00
 174	You can not delete a section that has ratings	{"en": "You can not delete a section that has ratings", "ru": "Нельзя удалить раздел, имеющий рейтинги", "uk": "Не можна видалити розділ, який має рейтинги"}	1	2023-04-03 17:45:06.468+00	2023-05-15 12:58:30.548+00
-175	You can not remove a rating that has sites or labels	{"en": "You can not remove a rating that has sites or labels", "ru": "Вы не можете удалить рейтинг, который имеет сайты или ярлыки", "uk": "Ви не можете видалити рейтинг, який має сайти або ярлыки"}	1	2023-04-03 17:45:06.469+00	2023-05-15 12:59:17+00
+355	Changes will be displayed on the "website" after the cache is published	{"en": "Changes will be displayed on the \\"website\\" after the cache is published", "ru": "Изменения отобразятся на \\"веб-сайте\\" после публикации кеша", "uk": "Зміни відображаються на \\"веб-сайті\\" після публікації кеша"}	2	2023-05-15 20:08:55.561+00	2023-05-15 20:11:32.148+00
+371	This website is currently in the screenshot queue	{"en": "This website is currently in the screenshot queue", "ru": "Этот веб-сайт в настоящее время находится в очереди на создание скриншотов", "uk": "Цей веб-сайт зараз знаходиться в черзі на створення скриншотів"}	1	2023-05-15 20:24:58.729+00	2023-05-15 20:26:48.659+00
+370	You can not remove a rating that has websites or labels	{"en": "You can not remove a rating that has websites or labels", "ru": "Вы не можете удалить рейтинг, в котором есть веб-сайты или ярлыки", "uk": "Ви не можете видалити оцінку, яка містить веб-сайти або ярлыки"}	1	2023-05-15 20:24:58.719+00	2023-05-15 20:27:37.006+00
+363	Creating / deleting a cache implies that these changes will be published on the main website	{"en": "Creating / deleting a cache implies that these changes will be published on the main website", "ru": "Создание/удаление кеша подразумевает, что эти изменения будут опубликованы на основном веб-сайте", "uk": "Створення/видалення кеша означає, що ці зміни будуть опубліковані на головному веб-сайті"}	2	2023-05-15 20:22:35.346+00	2023-05-15 20:32:59.603+00
+356	Edit website	{"en": "Edit website", "ru": "Редактировать веб-сайт", "uk": "Редактувати веб-сайт"}	2	2023-05-15 20:22:35.309+00	2023-05-15 20:33:54.857+00
+369	For the "error page" of the website the local colors will be used	{"en": "For the \\"error page\\" of the website the local colors will be used", "ru": "Для «страницы ошибок» веб-сайта будут использованы локальные цвета", "uk": "Для «сторінки помилок» веб-сайту будуть використані локальні кольори"}	2	2023-05-15 20:22:35.4+00	2023-05-15 20:34:35.859+00
+365	Remove from website	{"en": "Remove from website", "ru": "Удалить с веб-сайта", "uk": "Вилучити з веб-сайту"}	2	2023-05-15 20:22:35.365+00	2023-05-15 20:37:41.284+00
+368	Texts for the main website, in the admin panel will be displayed in the default language for the main website	{"en": "Texts for the main website, in the admin panel will be displayed in the default language for the main website", "ru": "Тексты для основного веб-сайта, в панели администратора будут отображаться на языке по умолчанию для основного веб-сайта", "uk": "Тексти для основного веб-сайту в панелі адміністратора відображатимуться мовою за промовчанням для основного веб-сайту"}	2	2023-05-15 20:22:35.382+00	2023-05-15 20:39:10.475+00
+362	The website has been added to the queue for taking a screenshot	{"en": "The website has been added to the queue for taking a screenshot", "ru": "Веб-сайт добавлен в очередь на создание скриншота", "uk": "Веб-сайт доданий у чергу на створення скріншоту"}	2	2023-05-15 20:22:35.341+00	2023-05-15 20:40:03.261+00
+359	The website is in queue for taking a screenshot	{"en": "The website is in queue for taking a screenshot", "ru": "Веб-сайт находится в очереди на создание скриншота", "uk": "Веб-сайт знаходиться у черзі на створення скріншоту"}	2	2023-05-15 20:22:35.333+00	2023-05-15 20:40:36.476+00
+360	There are no screenshots for this website	{"en": "There are no screenshots for this website", "ru": "Для этого веб-сайта нет скриншотов", "uk": "Для цього веб-сайту немає скріншотів"}	2	2023-05-15 20:22:35.337+00	2023-05-15 20:41:11.633+00
+361	There is already a screenshot for this website. Create new?	{"en": "There is already a screenshot for this website. Create new?", "ru": "Для этого веб-сайта уже есть скриншот. Создать новый?", "uk": "Для цього веб-сайту вже є скріншот. Створити новий?"}	2	2023-05-15 20:22:35.34+00	2023-05-15 20:43:33.319+00
+357	Website color	{"en": "Website color", "ru": "Цвет веб-сайта", "uk": "Колір веб-сайту"}	2	2023-05-15 20:22:35.326+00	2023-05-15 20:45:58.864+00
+366	Websites	{"en": "Websites", "ru": "Веб-сайти", "uk": "Веб-сайти"}	2	2023-05-15 20:22:35.373+00	2023-05-15 20:47:02.848+00
+372	Create cache "settings" for website?	{"en": "Create cache \\"settings\\" for website?", "ru": "Создать кеш \\"настройки\\" для веб-сайта?", "uk": "Створити кеш \\"налаштування\\" для веб-сайту?"}	2	2023-05-15 20:30:18.344+00	2023-05-15 20:31:28.232+00
+352	Image default (If the image does not exist)	{"en": "Image default (If the image does not exist)", "ru": "Изображение по умолчанию (если изображение не существует)", "uk": "Зображення за умовчанням (якщо зображення не існує)"}	2	2023-05-15 19:12:43.575+00	2023-05-15 20:36:03.344+00
+373	Website color updated	{"en": "Website color updated", "ru": "Цвет веб-сайта обновлен", "uk": "Колір веб-сайту оновлено"}	2	2023-05-15 20:44:08.539+00	2023-05-15 20:46:49.227+00
+374	Website and admin panel will be displayed in the language you selected in the language switcher	{"en": "Website and admin panel will be displayed in the language you selected in the language switcher", "ru": "Веб-сайт и панель администратора будут отображаться на том языке, который вы выбрали в переключателе языков", "uk": "Веб-сайт і панель адміністратора відображатимуться мовою, яку ви вибрали в перемикачі мов"}	2	2023-05-15 20:48:48.525+00	2023-05-15 20:49:47.427+00
 \.
 
 
@@ -344,7 +344,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 353, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 374, true);
 
 
 --
