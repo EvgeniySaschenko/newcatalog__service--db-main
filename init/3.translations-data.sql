@@ -207,6 +207,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 293	Invalid SSL private key	{"en": "Invalid SSL private key", "ru": "Некорректный приватный ключ SSL", "uk": "Некоректний приватний ключ SSL"}	1	2023-05-14 22:39:20.589+00	2023-05-15 12:45:51.62+00
 288	Not valid setting	{"en": "Not valid setting", "ru": "Недействительная настройка", "uk": "Недійсне налаштування"}	1	2023-05-14 22:39:20.574+00	2023-05-15 12:47:53.458+00
 289	The server must be available	{"en": "The server must be available", "ru": "Сервер должен быть доступен", "uk": "Сервер має бути доступним"}	1	2023-05-14 22:39:20.576+00	2023-05-15 12:53:14.586+00
+352	Image default (If the image does not exist)	{"en": "", "ru": "", "uk": ""}	2	2023-05-15 19:12:43.575+00	2023-05-15 19:12:43.575+00
 249	Any string	{"en": "Any string", "ru": "Любая строка", "uk": "Будь-який рядок"}	2	2023-05-14 22:39:16.174+00	2023-05-14 23:06:34.662+00
 236	Backup	{"en": "Backup", "ru": "Бэкап", "uk": "Резервне копіювання"}	2	2023-05-14 22:39:16.154+00	2023-05-14 23:16:27.092+00
 255	Color primary	{"en": "Color primary", "ru": "Основной цвет", "uk": "Основний колір"}	2	2023-05-14 22:39:16.184+00	2023-05-14 23:38:02.842+00
@@ -227,6 +228,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 244	Public key comment	{"en": "Public key comment", "ru": "Комментарий открытого ключа", "uk": "Коментар відкритого ключа"}	2	2023-05-14 22:39:16.167+00	2023-05-15 10:37:42.061+00
 280	SSL certificate has been changed	{"en": "SSL certificate has been changed", "ru": "SSL-сертификат изменен", "uk": "Сертифікат SSL змінено"}	2	2023-05-14 22:39:16.229+00	2023-05-15 11:03:07.694+00
 250	Select file	{"en": "Select file", "ru": "Выберите файл", "uk": "Виберіть файл"}	2	2023-05-14 22:39:16.175+00	2023-05-15 11:16:12.571+00
+353	Server protection	{"en": "Server protection", "ru": "Защита сервера", "uk": "Захист сервера"}	2	2023-05-15 19:12:43.594+00	2023-05-15 19:13:59.538+00
 7	Home	{"en": "Main page", "ru": "Главная страница", "uk": "Головна сторінка"}	3	2023-04-03 17:45:00.667+00	2023-05-14 22:44:24.973+00
 185	Sources	{"en": "Sources", "ru": "Источники", "uk": "Джерела"}	3	2023-05-14 22:39:09.018+00	2023-05-14 22:49:25.63+00
 4	The server is being updated	{"en": "The server is being updated", "ru": "Сервер обновляется", "uk": "Сервер оновлюється"}	3	2023-04-03 17:45:00.66+00	2023-05-14 22:49:51.23+00
@@ -288,7 +290,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 332	SSH public key	{"en": "SSH public key", "ru": "Открытый SSH-ключ", "uk": "Відкритий ключ SSH"}	2	2023-05-15 11:02:03.6+00	2023-05-15 11:02:40.172+00
 64	Screenshot uploaded	{"en": "Screenshot uploaded", "ru": "Скриншот загружен", "uk": "Скріншот завантажено"}	2	2023-04-03 17:45:03.932+00	2023-05-15 11:07:54.396+00
 333	Screenshots are not created automatically for subdomains	{"en": "Screenshots are not created automatically for subdomains", "ru": "Для субдоменов скриншоты не создаются автоматически ", "uk": "Для субдоменів скриншоти не створюються автоматично"}	2	2023-05-15 11:09:28.216+00	2023-05-15 11:11:19.212+00
-337	Server "protector"	{"en": "Server \\"protector\\"", "ru": "Сервер \\"protector\\"", "uk": "Сервер \\"protector\\""}	2	2023-05-15 11:20:50.401+00	2023-05-15 11:21:24.292+00
 246	Server url that allows / forbids sending requests to the API server	{"en": "Server url that allows / forbids sending requests to the API server", "ru": "URL-адрес сервера, который разрешает/запрещает отправку запросов на сервер API", "uk": "URL-адреса сервера, який дозволяє/забороняє надсилати запити на сервер API"}	2	2023-05-14 22:39:16.17+00	2023-05-15 11:22:24.925+00
 304	Settings	{"en": "Settings", "ru": "Настройки", "uk": "Налаштування"}	2	2023-05-14 23:11:03.297+00	2023-05-15 11:24:08.011+00
 41	Site color updated	{"en": "Site color updated", "ru": "Цвет сайта обновлен", "uk": "Оновлено колір сайту"}	2	2023-04-03 17:45:03.889+00	2023-05-15 11:25:37.425+00
@@ -343,7 +344,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 351, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 353, true);
 
 
 --
