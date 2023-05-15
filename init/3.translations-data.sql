@@ -194,6 +194,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 215	Run backup?	{"en": "Run backup?", "ru": "Запустить резервное копирование?", "uk": "Запустити резервне копіювання?"}	2	2023-05-14 22:39:16.092+00	2023-05-15 11:01:39.264+00
 181	This field cannot be empty	{"en": "This field cannot be empty", "ru": "Это поле не может быть пустым", "uk": "Це поле не може бути порожнім"}	1	2023-04-03 17:45:06.481+00	2023-05-15 12:56:04.699+00
 176	Value must be e-mail	{"en": "Value must be e-mail", "ru": "Значение должно быть e-mail", "uk": "Значення має бути e-mail"}	1	2023-04-03 17:45:06.471+00	2023-05-15 12:57:12.374+00
+351	#Title main page	{"en": "Internet service rating", "ru": "Рейтинг интернет-сервисов", "uk": "Рейтинг інтернет-сервісів"}	3	2023-05-15 18:15:17.139+00	2023-05-15 18:15:58.988+00
 248	The key (string) that the server should return in the response if requests to the API server are allowed	{"en": "The key (string) that the server should return in the response if requests to the API server are allowed", "ru": "Ключ (строка), который сервер должен вернуть в ответе, если запросы к серверу API разрешены", "uk": "Ключ (рядок), який сервер має повернути у відповідь, якщо запити до сервера API дозволені"}	2	2023-05-14 22:39:16.172+00	2023-05-15 11:45:15.954+00
 268	The phrase that will be added at the beginning of the "title" tag	{"en": "The phrase that will be added at the beginning of the \\"title\\" tag", "ru": "Фраза, которая будет добавлена в начало тега title", "uk": "Фраза, яка буде додана на початку тегу \\"title\\""}	2	2023-05-14 22:39:16.208+00	2023-05-15 11:45:40.899+00
 262	This CSS will be added to the "head" tag	{"en": "This CSS will be added to the \\"head\\" tag", "ru": "Этот CSS будет добавлен к тегу «head».", "uk": "Цей CSS буде додано до тегу \\"head\\"."}	2	2023-05-14 22:39:16.196+00	2023-05-15 12:04:49.431+00
@@ -227,7 +228,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 280	SSL certificate has been changed	{"en": "SSL certificate has been changed", "ru": "SSL-сертификат изменен", "uk": "Сертифікат SSL змінено"}	2	2023-05-14 22:39:16.229+00	2023-05-15 11:03:07.694+00
 250	Select file	{"en": "Select file", "ru": "Выберите файл", "uk": "Виберіть файл"}	2	2023-05-14 22:39:16.175+00	2023-05-15 11:16:12.571+00
 7	Home	{"en": "Main page", "ru": "Главная страница", "uk": "Головна сторінка"}	3	2023-04-03 17:45:00.667+00	2023-05-14 22:44:24.973+00
-8	Rating of Internet services	{"en": "Rating of Internet services", "ru": "Рейтинг интернет-сервисов", "uk": "Рейтинг інтернет-сервісів"}	3	2023-04-03 17:45:00.669+00	2023-05-14 22:47:51.473+00
 185	Sources	{"en": "Sources", "ru": "Источники", "uk": "Джерела"}	3	2023-05-14 22:39:09.018+00	2023-05-14 22:49:25.63+00
 4	The server is being updated	{"en": "The server is being updated", "ru": "Сервер обновляется", "uk": "Сервер оновлюється"}	3	2023-04-03 17:45:00.66+00	2023-05-14 22:49:51.23+00
 5	Try refreshing the page a little later	{"en": "Try refreshing the page a little later", "ru": "Попробуйте чуть позже обновить страницу", "uk": "Спробуйте трохи пізніше оновити сторінку"}	3	2023-04-03 17:45:00.663+00	2023-05-14 22:50:50.979+00
@@ -343,7 +343,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 349, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 351, true);
 
 
 --
