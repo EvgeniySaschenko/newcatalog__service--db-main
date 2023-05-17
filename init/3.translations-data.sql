@@ -337,6 +337,8 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 373	Website color updated	{"en": "Website color updated", "ru": "Цвет веб-сайта обновлен", "uk": "Колір веб-сайту оновлено"}	2	2023-05-15 20:44:08.539+00	2023-05-15 20:46:49.227+00
 374	Website and admin panel will be displayed in the language you selected in the language switcher	{"en": "Website and admin panel will be displayed in the language you selected in the language switcher", "ru": "Веб-сайт и панель администратора будут отображаться на том языке, который вы выбрали в переключателе языков", "uk": "Веб-сайт і панель адміністратора відображатимуться мовою, яку ви вибрали в перемикачі мов"}	2	2023-05-15 20:48:48.525+00	2023-05-15 20:49:47.427+00
 375	This setting is disabled in demo mode	{"en": "This setting is disabled in demo mode", "ru": " Этот параметр отключен в демо-режиме", "uk": "Цей параметр вимкнено в демо-режимі"}	1	2023-05-17 14:31:01.537+00	2023-05-17 14:33:57.124+00
+377	Passwords do not match	{"en": "Passwords do not match", "ru": "Пароли не совпадают", "uk": "Паролі не співпадають"}	1	2023-05-17 22:35:44.45+00	2023-05-17 22:36:08.429+00
+376	Repeat password	{"en": "Repeat password", "ru": "Повторите пароль", "uk": "Повторіть пароль"}	2	2023-05-17 22:34:12.629+00	2023-05-17 22:37:33.933+00
 \.
 
 
@@ -344,7 +346,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 375, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 377, true);
 
 
 --
