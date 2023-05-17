@@ -161,6 +161,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 188	User is not authorized	{"en": "User is not authorized", "ru": "Пользователь не авторизован", "uk": "Користувач не авторизований"}	2	2023-05-14 22:39:16.008+00	2023-05-15 12:29:18.218+00
 168	A label with the same name already exists	{"en": "A label with the same name already exists", "ru": "Ярлык с таким названием уже существует", "uk": "Ярлык з такою назвою вже існує"}	1	2023-04-03 17:45:06.456+00	2023-05-15 12:37:19.951+00
 180	Auth error	{"en": "Auth error", "ru": "Ошибка авторизации", "uk": "Помилка авторизації"}	1	2023-04-03 17:45:06.479+00	2023-05-15 12:37:51.983+00
+283	Translations	{"en": "Translations", "ru": "Переводы", "uk": "Переклади"}	2	2023-05-14 22:39:16.234+00	2023-05-15 12:20:03.319+00
 178	Incorrect login or password	{"en": "Incorrect login or password", "ru": "Неправильный логин или пароль", "uk": "Неправильний логін або пароль"}	1	2023-04-03 17:45:06.475+00	2023-05-15 12:41:04.474+00
 171	Not enough data	{"en": "Not enough data", "ru": "Не хватает данных", "uk": "Не хватает данных"}	1	2023-04-03 17:45:06.464+00	2023-05-15 12:46:19.102+00
 170	Server error	{"en": "Server error", "ru": "Ошибка сервера", "uk": "Помилка сервера"}	1	2023-04-03 17:45:06.461+00	2023-05-15 12:50:18.222+00
@@ -195,7 +196,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 270	To activate Google Tag Manager, add your id	{"en": "To activate Google Tag Manager, add your id", "ru": "Чтобы активировать Google Tag Manager, добавьте свой идентификатор", "uk": "Щоб активувати Google Tag Manager, додайте свій ідентифікатор"}	2	2023-05-14 22:39:16.211+00	2023-05-15 12:13:44.102+00
 265	This HTML will be added after the "header" tag	{"en": "This HTML will be added after the \\"header\\" tag", "ru": "Этот HTML будет добавлен после тега \\"header\\"", "uk": "Цей HTML буде додано після тегу \\"header\\""}	2	2023-05-14 22:39:16.203+00	2023-05-15 12:09:04.815+00
 263	This HTML will be added to the "header" tag	{"en": "This HTML will be added to the \\"header\\" tag", "ru": "Этот HTML будет добавлен в тег \\"header\\"", "uk": "Цей HTML буде додано в тег \\"header\\"."}	2	2023-05-14 22:39:16.197+00	2023-05-15 12:10:50.895+00
-283	Translations	{"en": "Translations", "ru": "Переводы", "uk": "Переклади"}	2	2023-05-14 22:39:16.234+00	2023-05-15 12:20:03.319+00
 285	Backup server not responding	{"en": "Backup server not responding", "ru": "Сервер резервного копирования не отвечает", "uk": "Сервер резервного копіювання не відповідає"}	1	2023-05-14 22:39:20.558+00	2023-05-15 12:38:21.302+00
 287	Incorrect file type	{"en": "Incorrect file type", "ru": "Неправильний тип файлу", "uk": "Неправильный тип файла"}	1	2023-05-14 22:39:20.568+00	2023-05-15 12:40:38.178+00
 293	Invalid SSL private key	{"en": "Invalid SSL private key", "ru": "Некорректный приватный ключ SSL", "uk": "Некоректний приватний ключ SSL"}	1	2023-05-14 22:39:20.589+00	2023-05-15 12:45:51.62+00
@@ -205,7 +205,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 236	Backup	{"en": "Backup", "ru": "Бэкап", "uk": "Резервне копіювання"}	2	2023-05-14 22:39:16.154+00	2023-05-14 23:16:27.092+00
 255	Color primary	{"en": "Color primary", "ru": "Основной цвет", "uk": "Основний колір"}	2	2023-05-14 22:39:16.184+00	2023-05-14 23:38:02.842+00
 233	Colors	{"en": "Colors", "ru": "Цвета", "uk": "Кольори"}	2	2023-05-14 22:39:16.147+00	2023-05-14 23:41:29.058+00
-241	Concurrency	{"en": "Concurrency", "ru": "Concurrency", "uk": "Concurrency"}	2	2023-05-14 22:39:16.162+00	2023-05-14 23:42:05.153+00
 230	Default language	{"en": "Default language", "ru": "Язык по умолчанию", "uk": "Мова за замовчуванням"}	2	2023-05-14 22:39:16.141+00	2023-05-14 23:54:11.027+00
 272	File not selected	{"en": "File not selected", "ru": "Файл не выбран", "uk": "Файл не вибрано"}	2	2023-05-14 22:39:16.215+00	2023-05-15 00:08:46.695+00
 279	For domain	{"en": "For domain", "ru": "Для домена", "uk": "Для домену"}	2	2023-05-14 22:39:16.227+00	2023-05-15 00:12:45.671+00
@@ -337,6 +336,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 352	Image default (If the image does not exist)	{"en": "Image default (If the image does not exist)", "ru": "Изображение по умолчанию (если изображение не существует)", "uk": "Зображення за умовчанням (якщо зображення не існує)"}	2	2023-05-15 19:12:43.575+00	2023-05-15 20:36:03.344+00
 373	Website color updated	{"en": "Website color updated", "ru": "Цвет веб-сайта обновлен", "uk": "Колір веб-сайту оновлено"}	2	2023-05-15 20:44:08.539+00	2023-05-15 20:46:49.227+00
 374	Website and admin panel will be displayed in the language you selected in the language switcher	{"en": "Website and admin panel will be displayed in the language you selected in the language switcher", "ru": "Веб-сайт и панель администратора будут отображаться на том языке, который вы выбрали в переключателе языков", "uk": "Веб-сайт і панель адміністратора відображатимуться мовою, яку ви вибрали в перемикачі мов"}	2	2023-05-15 20:48:48.525+00	2023-05-15 20:49:47.427+00
+375	This setting is disabled in demo mode	{"en": "This setting is disabled in demo mode", "ru": " Этот параметр отключен в демо-режиме", "uk": "Цей параметр вимкнено в демо-режимі"}	1	2023-05-17 14:31:01.537+00	2023-05-17 14:33:57.124+00
 \.
 
 
@@ -344,7 +344,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 374, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 375, true);
 
 
 --
