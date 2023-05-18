@@ -339,6 +339,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 375	This setting is disabled in demo mode	{"en": "This setting is disabled in demo mode", "ru": " Этот параметр отключен в демо-режиме", "uk": "Цей параметр вимкнено в демо-режимі"}	1	2023-05-17 14:31:01.537+00	2023-05-17 14:33:57.124+00
 377	Passwords do not match	{"en": "Passwords do not match", "ru": "Пароли не совпадают", "uk": "Паролі не співпадають"}	1	2023-05-17 22:35:44.45+00	2023-05-17 22:36:08.429+00
 376	Repeat password	{"en": "Repeat password", "ru": "Повторите пароль", "uk": "Повторіть пароль"}	2	2023-05-17 22:34:12.629+00	2023-05-17 22:37:33.933+00
+378	Private key and certificate do not match	{"en": "Private key and certificate do not match", "ru": "Приватный ключ и сертификат не совпадают", "uk": "Приватний ключ та сертифікат не співпадають"}	1	2023-05-18 21:54:12.343+00	2023-05-18 21:55:29.964+00
 \.
 
 
@@ -346,7 +347,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 377, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 378, true);
 
 
 --
