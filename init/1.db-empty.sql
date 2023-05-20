@@ -449,10 +449,10 @@ CREATE TABLE public.users (
 ALTER TABLE public.users OWNER TO postgres;
 
 --
--- Name: users-auth; Type: TABLE; Schema: public; Owner: postgres
+-- Name: users_auth; Type: TABLE; Schema: public; Owner: postgres
 --
 
-CREATE TABLE public."users-auth" (
+CREATE TABLE public.users_auth (
     "userAuthId" integer NOT NULL,
     email character varying(255) DEFAULT NULL::character varying,
     ip character varying(255) DEFAULT NULL::character varying,
@@ -465,7 +465,7 @@ CREATE TABLE public."users-auth" (
 );
 
 
-ALTER TABLE public."users-auth" OWNER TO postgres;
+ALTER TABLE public.users_auth OWNER TO postgres;
 
 --
 -- Name: users-auth_userAuthId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
@@ -486,7 +486,7 @@ ALTER TABLE public."users-auth_userAuthId_seq" OWNER TO postgres;
 -- Name: users-auth_userAuthId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
 --
 
-ALTER SEQUENCE public."users-auth_userAuthId_seq" OWNED BY public."users-auth"."userAuthId";
+ALTER SEQUENCE public."users-auth_userAuthId_seq" OWNED BY public.users_auth."userAuthId";
 
 
 --
@@ -589,10 +589,10 @@ ALTER TABLE ONLY public.users ALTER COLUMN "userId" SET DEFAULT nextval('public.
 
 
 --
--- Name: users-auth userAuthId; Type: DEFAULT; Schema: public; Owner: postgres
+-- Name: users_auth userAuthId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."users-auth" ALTER COLUMN "userAuthId" SET DEFAULT nextval('public."users-auth_userAuthId_seq"'::regclass);
+ALTER TABLE ONLY public.users_auth ALTER COLUMN "userAuthId" SET DEFAULT nextval('public."users-auth_userAuthId_seq"'::regclass);
 
 
 --
@@ -684,10 +684,10 @@ ALTER TABLE ONLY public.translations
 
 
 --
--- Name: users-auth users-auth_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+-- Name: users_auth users-auth_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
 --
 
-ALTER TABLE ONLY public."users-auth"
+ALTER TABLE ONLY public.users_auth
     ADD CONSTRAINT "users-auth_pkey" PRIMARY KEY ("userAuthId");
 
 

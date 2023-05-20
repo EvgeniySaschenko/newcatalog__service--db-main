@@ -340,6 +340,9 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 377	Passwords do not match	{"en": "Passwords do not match", "ru": "Пароли не совпадают", "uk": "Паролі не співпадають"}	1	2023-05-17 22:35:44.45+00	2023-05-17 22:36:08.429+00
 376	Repeat password	{"en": "Repeat password", "ru": "Повторите пароль", "uk": "Повторіть пароль"}	2	2023-05-17 22:34:12.629+00	2023-05-17 22:37:33.933+00
 378	Private key and certificate do not match	{"en": "Private key and certificate do not match", "ru": "Приватный ключ и сертификат не совпадают", "uk": "Приватний ключ та сертифікат не співпадають"}	1	2023-05-18 21:54:12.343+00	2023-05-18 21:55:29.964+00
+379	Hidden	{"en": "Hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-05-20 20:05:05.566+00	2023-05-20 20:06:58.409+00
+380	Go to ratings list	{"en": "Go to ratings list", "ru": "К списку рейтингов", "uk": "До списку рейтингів"}	2	2023-05-20 20:57:17.293+00	2023-05-20 20:58:51.877+00
+381	Page	{"en": "Page", "ru": "Страница", "uk": "Сторінка"}	2	2023-05-20 21:04:08.899+00	2023-05-20 21:05:03.279+00
 \.
 
 
@@ -347,7 +350,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 378, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 381, true);
 
 
 --

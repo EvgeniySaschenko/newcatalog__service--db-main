@@ -153,3 +153,7 @@ let backup = new Backup({
 });
 
 backup.init();
+
+process.on('uncaughtException', function (error) {
+  console.error(error);
+});
