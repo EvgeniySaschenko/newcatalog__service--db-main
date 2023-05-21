@@ -228,7 +228,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 336	Selection color - text	{"en": "Selection color - text", "ru": "Цвет выделения - текст", "uk": "Колір виділення - текст"}	2	2023-05-15 11:18:06.441+00	2023-05-15 11:18:40.611+00
 296	Not exist ISO key	{"en": "Not exist ISO key", "ru": "Не существует ключа ISO", "uk": "Ключ ISO не існує"}	1	2023-05-14 22:39:20.601+00	2023-05-15 12:46:43.137+00
 29	Logo or screenshot for the domain	{"en": "Logo or screenshot for the domain", "ru": "Логотип или скриншот для домена", "uk": "Логотип або скріншот для домену"}	2	2023-04-03 17:45:03.866+00	2023-05-15 10:26:08.482+00
-299	A backup will be created for: database, images and whois	{"en": "A backup will be created for: database, images and whois", "ru": "Резервная копия будет создана для: базы данных, изображений и whois", "uk": "Буде створено резервну копію для: бази даних, зображень і whois"}	2	2023-05-14 22:58:32.247+00	2023-05-14 22:59:18.466+00
 303	Add a Section	{"en": "Add a Section", "ru": "Добавить раздел", "uk": "Додати розділ"}	2	2023-05-14 23:02:53.034+00	2023-05-14 23:03:24.909+00
 323	Main Page	{"en": "Main Page", "ru": "Главная страница", "uk": "Головна сторінка"}	2	2023-05-15 09:50:42.081+00	2023-05-15 10:29:34.105+00
 51	Added	{"en": "Added", "ru": "Добавлен", "uk": "Додано"}	2	2023-04-03 17:45:03.907+00	2023-05-14 23:04:34.069+00
@@ -343,6 +342,13 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 379	Hidden	{"en": "Hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-05-20 20:05:05.566+00	2023-05-20 20:06:58.409+00
 380	Go to ratings list	{"en": "Go to ratings list", "ru": "К списку рейтингов", "uk": "До списку рейтингів"}	2	2023-05-20 20:57:17.293+00	2023-05-20 20:58:51.877+00
 381	Page	{"en": "Page", "ru": "Страница", "uk": "Сторінка"}	2	2023-05-20 21:04:08.899+00	2023-05-20 21:05:03.279+00
+299	A backup will be created for: database, images and whois	{"en": "A backup will be created for: database, images and whois", "ru": "Резервная копия будет создана для: базы данных, изображений и whois", "uk": "Буде створено резервну копію для: бази даних, зображень і whois"}	2	2023-05-14 22:58:32.247+00	2023-05-20 21:31:57.783+00
+383	Restart	{"en": "Restart", "ru": "Перезапустить", "uk": "Перезапустити"}	2	2023-05-21 00:43:53.162+00	2023-05-21 00:46:38.547+00
+382	Restart screenshots process create	{"en": "Restart screenshots process create", "ru": "Перезапустить процесс создания скриншотов", "uk": "Перезапустіть процес створення скріншотів"}	2	2023-05-21 00:43:53.156+00	2023-05-21 00:47:03.444+00
+385	Restart screenshots process create?	{"en": "Restart screenshots process create?", "ru": "Перезапустить процесс создания скриншотов?", "uk": "Перезапустити процес створення скріншотів?"}	2	2023-05-21 00:43:53.171+00	2023-05-21 00:48:09.228+00
+384	Restart the process of getting site information	{"en": "Restart the process of getting site information", "ru": "Перезапустить процесс получения информации о сайте", "uk": "Перезапустити процес отримання інформації про сайт"}	2	2023-05-21 00:43:53.164+00	2023-05-21 00:48:45.709+00
+387	Restart the process of getting site information?	{"en": "Restart the process of getting site information?", "ru": "Перезапустить процесс получения информации о сайте?", "uk": "Перезапустити процес отримання інформації про сайт?"}	2	2023-05-21 00:43:53.175+00	2023-05-21 00:49:04.032+00
+386	Restarted	{"en": "Restarted", "ru": "Перезапущено", "uk": "Перезапущено"}	2	2023-05-21 00:43:53.173+00	2023-05-21 00:49:39.216+00
 \.
 
 
@@ -350,7 +356,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 381, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 387, true);
 
 
 --
