@@ -348,8 +348,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 384	Restart the process of getting site information	{"en": "Restart the process of getting site information", "ru": "Перезапустить процесс получения информации о сайте", "uk": "Перезапустити процес отримання інформації про сайт"}	2	2023-05-21 00:43:53.164+00	2023-05-21 00:48:45.709+00
 387	Restart the process of getting site information?	{"en": "Restart the process of getting site information?", "ru": "Перезапустить процесс получения информации о сайте?", "uk": "Перезапустити процес отримання інформації про сайт?"}	2	2023-05-21 00:43:53.175+00	2023-05-21 00:49:04.032+00
 386	Restarted	{"en": "Restarted", "ru": "Перезапущено", "uk": "Перезапущено"}	2	2023-05-21 00:43:53.173+00	2023-05-21 00:49:39.216+00
-389	See the example in the documentation	{"en": "See the example in the documentation", "ru": "См. пример в документации", "uk": "Дивіться приклад у документації"}	2	2023-05-23 22:09:10.689+00	2023-05-23 22:10:24.709+00
-388	To activate Google Tag Manager, add the code without the "script" tag	{"en": "To activate Google Tag Manager, add the code without the \\"script\\" tag", "ru": "Чтобы активировать Google Tag Manager, добавьте код без тега \\"script\\"", "uk": "Щоб активувати Google Tag Manager, додайте код без тега \\"script\\""}	2	2023-05-23 22:09:10.686+00	2023-05-23 22:12:44.66+00
 \.
 
 
