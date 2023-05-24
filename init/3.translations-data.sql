@@ -192,9 +192,9 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 354	Add website	{"en": "Add website", "ru": "Добавить веб-сайт", "uk": "Додати веб-сайт"}	2	2023-05-15 20:08:55.499+00	2023-05-15 20:09:34.508+00
 248	The key (string) that the server should return in the response if requests to the API server are allowed	{"en": "The key (string) that the server should return in the response if requests to the API server are allowed", "ru": "Ключ (строка), который сервер должен вернуть в ответе, если запросы к серверу API разрешены", "uk": "Ключ (рядок), який сервер має повернути у відповідь, якщо запити до сервера API дозволені"}	2	2023-05-14 22:39:16.172+00	2023-05-15 11:45:15.954+00
 268	The phrase that will be added at the beginning of the "title" tag	{"en": "The phrase that will be added at the beginning of the \\"title\\" tag", "ru": "Фраза, которая будет добавлена в начало тега title", "uk": "Фраза, яка буде додана на початку тегу \\"title\\""}	2	2023-05-14 22:39:16.208+00	2023-05-15 11:45:40.899+00
-262	This CSS will be added to the "head" tag	{"en": "This CSS will be added to the \\"head\\" tag", "ru": "Этот CSS будет добавлен к тегу «head».", "uk": "Цей CSS буде додано до тегу \\"head\\"."}	2	2023-05-14 22:39:16.196+00	2023-05-15 12:04:49.431+00
 265	This HTML will be added after the "header" tag	{"en": "This HTML will be added after the \\"header\\" tag", "ru": "Этот HTML будет добавлен после тега \\"header\\"", "uk": "Цей HTML буде додано після тегу \\"header\\""}	2	2023-05-14 22:39:16.203+00	2023-05-15 12:09:04.815+00
 263	This HTML will be added to the "header" tag	{"en": "This HTML will be added to the \\"header\\" tag", "ru": "Этот HTML будет добавлен в тег \\"header\\"", "uk": "Цей HTML буде додано в тег \\"header\\"."}	2	2023-05-14 22:39:16.197+00	2023-05-15 12:10:50.895+00
+262	This CSS will be added to the "head" tag	{"en": "This CSS will be added to the \\"head\\" tag", "ru": "Этот CSS будет добавлен к тегу «head»", "uk": "Цей CSS буде додано до тегу \\"head\\""}	2	2023-05-14 22:39:16.196+00	2023-05-24 14:38:06.454+00
 285	Backup server not responding	{"en": "Backup server not responding", "ru": "Сервер резервного копирования не отвечает", "uk": "Сервер резервного копіювання не відповідає"}	1	2023-05-14 22:39:20.558+00	2023-05-15 12:38:21.302+00
 287	Incorrect file type	{"en": "Incorrect file type", "ru": "Неправильний тип файлу", "uk": "Неправильный тип файла"}	1	2023-05-14 22:39:20.568+00	2023-05-15 12:40:38.178+00
 293	Invalid SSL private key	{"en": "Invalid SSL private key", "ru": "Некорректный приватный ключ SSL", "uk": "Некоректний приватний ключ SSL"}	1	2023-05-14 22:39:20.589+00	2023-05-15 12:45:51.62+00
@@ -348,6 +348,8 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 384	Restart the process of getting site information	{"en": "Restart the process of getting site information", "ru": "Перезапустить процесс получения информации о сайте", "uk": "Перезапустити процес отримання інформації про сайт"}	2	2023-05-21 00:43:53.164+00	2023-05-21 00:48:45.709+00
 387	Restart the process of getting site information?	{"en": "Restart the process of getting site information?", "ru": "Перезапустить процесс получения информации о сайте?", "uk": "Перезапустити процес отримання інформації про сайт?"}	2	2023-05-21 00:43:53.175+00	2023-05-21 00:49:04.032+00
 386	Restarted	{"en": "Restarted", "ru": "Перезапущено", "uk": "Перезапущено"}	2	2023-05-21 00:43:53.173+00	2023-05-21 00:49:39.216+00
+391	Add without "style" tag	{"en": "Add without \\"style\\" tag", "ru": "Добавить без тега \\"style\\"", "uk": "Додати без тегу \\"style\\"."}	2	2023-05-24 14:36:36.35+00	2023-05-24 14:37:43.25+00
+390	Add without "script" tag	{"en": "Add without \\"script\\" tag", "ru": "Добавить без тега \\"script\\"", "uk": "Додати без тегу \\"script\\"."}	2	2023-05-24 14:36:36.34+00	2023-05-24 14:37:44.475+00
 \.
 
 
@@ -355,7 +357,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 389, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 391, true);
 
 
 --
