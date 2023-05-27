@@ -324,7 +324,8 @@ CREATE TABLE public.sections (
     "isHiden" boolean DEFAULT true,
     "visitorId" integer,
     "dateCreate" timestamp with time zone,
-    "dateUpdate" timestamp with time zone
+    "dateUpdate" timestamp with time zone,
+    descr jsonb DEFAULT '{}'::jsonb
 );
 
 

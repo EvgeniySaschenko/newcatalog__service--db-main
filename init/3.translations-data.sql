@@ -135,7 +135,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 114	Delete from cache	{"en": "Delete from cache", "ru": "Удалить из кеша", "uk": "Видалити з кешу"}	2	2023-04-03 17:45:04.014+00	2023-05-14 23:56:56.066+00
 107	Display	{"en": "Display", "ru": "Отображение", "uk": "Відображення"}	2	2023-04-03 17:45:04.003+00	2023-05-15 00:00:49.299+00
 86	Edit	{"en": "Edit", "ru": "Редактировать", "uk": "Редагувати"}	2	2023-04-03 17:45:03.966+00	2023-05-15 00:04:17.255+00
-94	Edit rating	{"en": "Edit rating", "ru": "Редактировать рейтинг", "uk": "Редагувати рейтинг"}	2	2023-04-03 17:45:03.979+00	2023-05-15 00:05:31.345+00
 132	Error text	{"en": "Error text", "ru": "Текст ошибки", "uk": "Текст помилки"}	2	2023-04-03 17:45:04.043+00	2023-05-15 00:07:35.481+00
 97	Is hidden	{"en": "Is hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-04-03 17:45:03.984+00	2023-05-15 10:08:37.318+00
 149	Language changed	{"en": "Language changed", "ru": "Язык изменен", "uk": "Мова змінена"}	2	2023-04-03 17:45:04.073+00	2023-05-15 10:19:22.481+00
@@ -234,6 +233,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 61	An invalid file type has been selected	{"en": "An invalid file type has been selected", "ru": "Выбран недопустимый тип файла", "uk": "Вибрано недійсний тип файлу"}	2	2023-04-03 17:45:03.927+00	2023-05-14 23:06:08.525+00
 254	Background color - "body" tag	{"en": "Background color - \\"body\\" tag", "ru": "Цвет фона - тег \\"body\\"", "uk": "Колір фону - тег \\"body\\""}	2	2023-05-14 22:39:16.182+00	2023-05-14 23:15:40.284+00
 305	Blocked	{"en": "Blocked", "ru": "Блокируется", "uk": "Блокується"}	2	2023-05-14 23:19:08.657+00	2023-05-14 23:19:30.559+00
+291	Not valid lang	{"en": "Not valid lang", "ru": "Недействительный язык", "uk": "Недійсна мова"}	1	2023-05-14 22:39:20.582+00	2023-05-15 12:47:26.036+00
 282	Certificates will change for the mode in which the "production" / "development" server is running	{"en": "Certificates will change for the mode in which the \\"production\\" / \\"development\\" server is running", "ru": "Сертификаты изменятся для режима, в котором работает сервер  \\"production\\" / \\"development\\"", "uk": "Сертифікати змінюються для режиму, в якому запущений сервер \\"production\\" / \\"development\\""}	2	2023-05-14 22:39:16.232+00	2023-05-14 23:23:28.578+00
 28	Change color	{"en": "Change color", "ru": "Изменить цвет", "uk": "Змінити колір"}	2	2023-04-03 17:45:03.865+00	2023-05-14 23:24:26.177+00
 33	A logo can be created on the "Create a logo" tab	{"en": "A logo can be created on the \\"Create a logo\\" tab", "ru": "Логотип можно создать на вкладке \\"Создать логотип\\"", "uk": "Логотип можна створити на вкладці \\"Створити логотип\\""}	2	2023-04-03 17:45:03.874+00	2023-05-14 23:28:35.248+00
@@ -261,6 +261,8 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 23	For subdomains, screenshots are not generated automatically, because the logos for the domain and subdomain can be the same	{"en": "For subdomains, screenshots are not generated automatically, because the logos for the domain and subdomain can be the same", "ru": "Для поддоменов скриншоты не создаются автоматически, т.к. логотипы для домена и субдомена могут совпадать", "uk": "Для субдоменів скріншоти не створюються автоматично, оскільки логотипи для домену та субдомену можуть бути однаковими"}	2	2023-04-03 17:45:03.855+00	2023-05-15 09:43:13.292+00
 322	Go to Main Page	{"en": "Go to Main Page", "ru": "На главную страницу", "uk": "На головну сторінку"}	3	2023-05-15 09:49:40.128+00	2023-05-15 09:50:23.467+00
 117	If the rating is hidden	{"en": "If the rating is hidden", "ru": "Якщо рейтинг прихований", "uk": "Если рейтинг скрыт"}	2	2023-04-03 17:45:04.018+00	2023-05-15 09:51:34.25+00
+266	This HTML will be added before the "footer" tag	{"en": "This HTML will be added before the \\"footer\\" tag", "ru": "Этот HTML будет добавлен перед тегом \\"footer\\"", "uk": "Цей HTML буде додано перед тегом \\"footer\\""}	2	2023-05-14 22:39:16.204+00	2023-05-15 12:09:05.897+00
+376	Repeat password	{"en": "Repeat password", "ru": "Повторите пароль", "uk": "Повторіть пароль"}	2	2023-05-17 22:34:12.629+00	2023-05-17 22:37:33.933+00
 324	If the server "protector" is unavailable, you will not be able to access the admin panel	{"en": "If the server \\"protector\\" is unavailable, you will not be able to access the admin panel", "ru": "Если сервер \\"protector\\" недоступен, вы не сможете получить доступ к панели администратора", "uk": "Якщо сервер \\"protector\\" недоступний, ви не зможете отримати доступ до панелі адміністратора"}	2	2023-05-15 09:54:17.643+00	2023-05-15 09:55:21.188+00
 118	If there is no content to post, or the content is hidden	{"en": "If there is no content to post, or the content is hidden", "ru": "Если нет контента для публикации или контент скрыт", "uk": "Якщо немає контенту для публікації або контент прихований"}	2	2023-04-03 17:45:04.019+00	2023-05-15 09:56:09.677+00
 325	Image preloader	{"en": "Image preloader", "ru": "Изображение preloader", "uk": "Зображення preloader"}	2	2023-05-15 09:58:19.335+00	2023-05-15 09:59:37.539+00
@@ -290,8 +292,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 196	The router does not have a key that is used in the main menu	{"en": "The router does not have a key that is used in the main menu", "ru": "В роутере нет ключа, которий используется в главном меню", "uk": "У роутера немає ключа, який використовується в головному меню"}	2	2023-05-14 22:39:16.027+00	2023-05-15 11:52:42.843+00
 38	There is already another image associated with the domain	{"en": "There is already another image associated with the domain", "ru": "С доменом уже связано другое изображение", "uk": "З доменом уже пов’язано інше зображення"}	2	2023-04-03 17:45:03.885+00	2023-05-15 12:04:07.229+00
 211	There were errors while creating the cache	{"en": "При создании кеша возникли ошибки", "ru": "При создании кеша возникли ошибки", "uk": "Під час створення кешу виникли помилки"}	2	2023-05-14 22:39:16.086+00	2023-05-15 12:04:28.862+00
-291	Not valid lang	{"en": "Not valid lang", "ru": "Недействительный язык", "uk": "Недійсна мова"}	1	2023-05-14 22:39:20.582+00	2023-05-15 12:47:26.036+00
-266	This HTML will be added before the "footer" tag	{"en": "This HTML will be added before the \\"footer\\" tag", "ru": "Этот HTML будет добавлен перед тегом \\"footer\\"", "uk": "Цей HTML буде додано перед тегом \\"footer\\""}	2	2023-05-14 22:39:16.204+00	2023-05-15 12:09:05.897+00
 347	This HTML will be added in the "footer" tag	{"en": "This HTML will be added in the \\"footer\\" tag", "ru": "Этот HTML будет добавлен в тег \\"footer\\"", "uk": "Цей HTML буде додано в тег \\"footer\\"."}	2	2023-05-15 12:06:41.761+00	2023-05-15 12:09:06.926+00
 261	This JavaScript will be added to the "head" tag	{"en": "This JavaScript will be added to the \\"head\\" tag", "ru": "Этот JavaScript будет добавлен в тег \\"head\\"", "uk": "Цей JavaScript буде додано в тег \\"head\\"."}	2	2023-05-14 22:39:16.194+00	2023-05-15 12:10:49.631+00
 25	This means that when you edit the logo/color, the changes will show up wherever this screenshot is used	{"en": "This means that when you edit the logo/color, the changes will show up wherever this screenshot is used", "ru": "Это означает, что когда вы редактируете логотип/цвет, изменения будут отображаться везде, где используется этот снимок экрана", "uk": "Це означає, що коли ви редагуєте логотип/колір, зміни відображатимуться всюди, де використовується цей знімок екрана"}	2	2023-04-03 17:45:03.859+00	2023-05-15 12:11:42.208+00
@@ -336,7 +336,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 374	Website and admin panel will be displayed in the language you selected in the language switcher	{"en": "Website and admin panel will be displayed in the language you selected in the language switcher", "ru": "Веб-сайт и панель администратора будут отображаться на том языке, который вы выбрали в переключателе языков", "uk": "Веб-сайт і панель адміністратора відображатимуться мовою, яку ви вибрали в перемикачі мов"}	2	2023-05-15 20:48:48.525+00	2023-05-15 20:49:47.427+00
 375	This setting is disabled in demo mode	{"en": "This setting is disabled in demo mode", "ru": " Этот параметр отключен в демо-режиме", "uk": "Цей параметр вимкнено в демо-режимі"}	1	2023-05-17 14:31:01.537+00	2023-05-17 14:33:57.124+00
 377	Passwords do not match	{"en": "Passwords do not match", "ru": "Пароли не совпадают", "uk": "Паролі не співпадають"}	1	2023-05-17 22:35:44.45+00	2023-05-17 22:36:08.429+00
-376	Repeat password	{"en": "Repeat password", "ru": "Повторите пароль", "uk": "Повторіть пароль"}	2	2023-05-17 22:34:12.629+00	2023-05-17 22:37:33.933+00
 378	Private key and certificate do not match	{"en": "Private key and certificate do not match", "ru": "Приватный ключ и сертификат не совпадают", "uk": "Приватний ключ та сертифікат не співпадають"}	1	2023-05-18 21:54:12.343+00	2023-05-18 21:55:29.964+00
 379	Hidden	{"en": "Hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-05-20 20:05:05.566+00	2023-05-20 20:06:58.409+00
 380	Go to ratings list	{"en": "Go to ratings list", "ru": "К списку рейтингов", "uk": "До списку рейтингів"}	2	2023-05-20 20:57:17.293+00	2023-05-20 20:58:51.877+00
@@ -350,6 +349,10 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 386	Restarted	{"en": "Restarted", "ru": "Перезапущено", "uk": "Перезапущено"}	2	2023-05-21 00:43:53.173+00	2023-05-21 00:49:39.216+00
 391	Add without "style" tag	{"en": "Add without \\"style\\" tag", "ru": "Добавить без тега \\"style\\"", "uk": "Додати без тегу \\"style\\"."}	2	2023-05-24 14:36:36.35+00	2023-05-24 14:37:43.25+00
 390	Add without "script" tag	{"en": "Add without \\"script\\" tag", "ru": "Добавить без тега \\"script\\"", "uk": "Додати без тегу \\"script\\"."}	2	2023-05-24 14:36:36.34+00	2023-05-24 14:37:44.475+00
+392	Page	{"en": "Page", "ru": "Страница", "uk": "Сторінка"}	3	2023-05-27 14:05:22.754+00	2023-05-27 14:06:21.434+00
+393	Edit a Section	{"en": "Edit a Section", "ru": "Изменить раздел", "uk": "Редагувати розділ"}	2	2023-05-27 14:06:26.418+00	2023-05-27 14:09:12.96+00
+94	Edit rating	{"en": "Edit rating", "ru": "Изменить рейтинг", "uk": "Редагувати рейтинг"}	2	2023-04-03 17:45:03.979+00	2023-05-27 14:09:18.779+00
+394	The section has been hidden or deleted, you need to rebuild the entire cache	{"en": "The section has been hidden or deleted, you need to rebuild the entire cache", "ru": "Раздел был скрыт или удален, нужно пересобрать весь кеш", "uk": "Розділ було приховано або видалено, вам потрібно перебудувати весь кеш"}	1	2023-05-27 14:10:26.121+00	2023-05-27 14:11:18.893+00
 \.
 
 
@@ -357,7 +360,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 391, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 394, true);
 
 
 --
