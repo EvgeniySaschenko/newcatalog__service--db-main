@@ -233,6 +233,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 254	Background color - "body" tag	{"en": "Background color - \\"body\\" tag", "ru": "Цвет фона - тег \\"body\\"", "uk": "Колір фону - тег \\"body\\""}	2	2023-05-14 22:39:16.182+00	2023-05-14 23:15:40.284+00
 305	Blocked	{"en": "Blocked", "ru": "Блокируется", "uk": "Блокується"}	2	2023-05-14 23:19:08.657+00	2023-05-14 23:19:30.559+00
 291	Not valid lang	{"en": "Not valid lang", "ru": "Недействительный язык", "uk": "Недійсна мова"}	1	2023-05-14 22:39:20.582+00	2023-05-15 12:47:26.036+00
+355	Changes will be displayed on the "website" after the cache is published	{"en": "Changes will be displayed on the \\"website\\" after the cache is published", "ru": "Изменения отобразятся на \\"веб-сайте\\" после публикации кеша", "uk": "Зміни відображаються на \\"веб-сайті\\" після публікації кеша"}	2	2023-05-15 20:08:55.561+00	2023-05-15 20:11:32.148+00
 282	Certificates will change for the mode in which the "production" / "development" server is running	{"en": "Certificates will change for the mode in which the \\"production\\" / \\"development\\" server is running", "ru": "Сертификаты изменятся для режима, в котором работает сервер  \\"production\\" / \\"development\\"", "uk": "Сертифікати змінюються для режиму, в якому запущений сервер \\"production\\" / \\"development\\""}	2	2023-05-14 22:39:16.232+00	2023-05-14 23:23:28.578+00
 28	Change color	{"en": "Change color", "ru": "Изменить цвет", "uk": "Змінити колір"}	2	2023-04-03 17:45:03.865+00	2023-05-14 23:24:26.177+00
 33	A logo can be created on the "Create a logo" tab	{"en": "A logo can be created on the \\"Create a logo\\" tab", "ru": "Логотип можно создать на вкладке \\"Создать логотип\\"", "uk": "Логотип можна створити на вкладці \\"Створити логотип\\""}	2	2023-04-03 17:45:03.874+00	2023-05-14 23:28:35.248+00
@@ -291,6 +292,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 38	There is already another image associated with the domain	{"en": "There is already another image associated with the domain", "ru": "С доменом уже связано другое изображение", "uk": "З доменом уже пов’язано інше зображення"}	2	2023-04-03 17:45:03.885+00	2023-05-15 12:04:07.229+00
 211	There were errors while creating the cache	{"en": "При создании кеша возникли ошибки", "ru": "При создании кеша возникли ошибки", "uk": "Під час створення кешу виникли помилки"}	2	2023-05-14 22:39:16.086+00	2023-05-15 12:04:28.862+00
 379	Hidden	{"en": "Hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-05-20 20:05:05.566+00	2023-05-20 20:06:58.409+00
+371	This website is currently in the screenshot queue	{"en": "This website is currently in the screenshot queue", "ru": "Этот веб-сайт в настоящее время находится в очереди на создание скриншотов", "uk": "Цей веб-сайт зараз знаходиться в черзі на створення скриншотів"}	1	2023-05-15 20:24:58.729+00	2023-05-15 20:26:48.659+00
 25	This means that when you edit the logo/color, the changes will show up wherever this screenshot is used	{"en": "This means that when you edit the logo/color, the changes will show up wherever this screenshot is used", "ru": "Это означает, что когда вы редактируете логотип/цвет, изменения будут отображаться везде, где используется этот снимок экрана", "uk": "Це означає, що коли ви редагуєте логотип/колір, зміни відображатимуться всюди, де використовується цей знімок екрана"}	2	2023-04-03 17:45:03.859+00	2023-05-15 12:11:42.208+00
 275	This setting can completely block access to the admin panel	{"en": "This setting can completely block access to the admin panel", "ru": "Эта настройка может полностью заблокировать доступ к панели администратора", "uk": "Цей параметр може повністю заблокувати доступ до панелі адміністратора"}	2	2023-05-14 22:39:16.22+00	2023-05-15 12:12:29.579+00
 129	To create a cache, you need to save changes	{"en": "To create a cache, you need to save changes", "ru": "Для создания кеша нужно сохранить изменения", "uk": "Щоб створити кеш, потрібно зберегти зміни"}	2	2023-04-03 17:45:04.038+00	2023-05-15 12:14:21.127+00
@@ -313,8 +315,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 177	This e-mail already exists	{"en": "This e-mail already exists", "ru": "Такой e-mail уже существует", "uk": "Такий e-mail вже існує"}	1	2023-04-03 17:45:06.473+00	2023-05-15 12:55:25.685+00
 162	Wrong data format	{"en": "Wrong data format", "ru": "Неправильный формат данных", "uk": "Неправильний формат даних"}	1	2023-04-03 17:45:06.446+00	2023-05-15 12:57:47.533+00
 174	You can not delete a section that has ratings	{"en": "You can not delete a section that has ratings", "ru": "Нельзя удалить раздел, имеющий рейтинги", "uk": "Не можна видалити розділ, який має рейтинги"}	1	2023-04-03 17:45:06.468+00	2023-05-15 12:58:30.548+00
-355	Changes will be displayed on the "website" after the cache is published	{"en": "Changes will be displayed on the \\"website\\" after the cache is published", "ru": "Изменения отобразятся на \\"веб-сайте\\" после публикации кеша", "uk": "Зміни відображаються на \\"веб-сайті\\" після публікації кеша"}	2	2023-05-15 20:08:55.561+00	2023-05-15 20:11:32.148+00
-371	This website is currently in the screenshot queue	{"en": "This website is currently in the screenshot queue", "ru": "Этот веб-сайт в настоящее время находится в очереди на создание скриншотов", "uk": "Цей веб-сайт зараз знаходиться в черзі на створення скриншотів"}	1	2023-05-15 20:24:58.729+00	2023-05-15 20:26:48.659+00
 363	Creating / deleting a cache implies that these changes will be published on the main website	{"en": "Creating / deleting a cache implies that these changes will be published on the main website", "ru": "Создание/удаление кеша подразумевает, что эти изменения будут опубликованы на основном веб-сайте", "uk": "Створення/видалення кеша означає, що ці зміни будуть опубліковані на головному веб-сайті"}	2	2023-05-15 20:22:35.346+00	2023-05-15 20:32:59.603+00
 356	Edit website	{"en": "Edit website", "ru": "Редактировать веб-сайт", "uk": "Редактувати веб-сайт"}	2	2023-05-15 20:22:35.309+00	2023-05-15 20:33:54.857+00
 369	For the "error page" of the website the local colors will be used	{"en": "For the \\"error page\\" of the website the local colors will be used", "ru": "Для «страницы ошибок» веб-сайта будут использованы локальные цвета", "uk": "Для «сторінки помилок» веб-сайту будуть використані локальні кольори"}	2	2023-05-15 20:22:35.4+00	2023-05-15 20:34:35.859+00
@@ -353,6 +353,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 261	This JavaScript will be added to the "head" tag	{"en": "This JavaScript will be added to the \\"head\\" tag", "ru": "Этот JavaScript будет добавлен в тег \\"head\\"", "uk": "Цей JavaScript буде додано в тег \\"head\\""}	2	2023-05-14 22:39:16.194+00	2023-05-28 23:02:36.159+00
 390	Add without "script" tag	{"en": "Add without \\"script\\" tag", "ru": "Добавить без тега \\"script\\"", "uk": "Додати без тегу \\"script\\""}	2	2023-05-24 14:36:36.34+00	2023-05-28 23:18:59.013+00
 370	You can not remove a rating that has websites or labels	{"en": "You can not remove a rating that has websites or labels", "ru": "Вы не можете удалить рейтинг, в котором есть веб-сайты или ярлыки", "uk": "Ви не можете видалити рейтинг, який містить веб-сайти або ярлыки"}	1	2023-05-15 20:24:58.719+00	2023-05-29 17:35:59.172+00
+395	Remove rating from cache	{"en": "Remove rating from cache", "ru": "Удалите рейтинг из кеша", "uk": "Удалите рейтинг із кеша"}	1	2023-05-30 20:37:47.309+00	2023-05-30 20:39:36.902+00
 \.
 
 
@@ -360,7 +361,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 394, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 395, true);
 
 
 --
