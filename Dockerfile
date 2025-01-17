@@ -1,8 +1,9 @@
-FROM postgres:17.2-alpine
-RUN apk add --update nodejs=22.11.0-r1 npm
+FROM postgres:15.1-alpine
+RUN apk add --update nodejs npm
 
 ARG WORKDIR_BASE
+ARG SERVICE
 
-WORKDIR ${WORKDIR_BASE}
+WORKDIR ${WORKDIR_BASE}/${SERVICE}
 
 COPY server.js ./
