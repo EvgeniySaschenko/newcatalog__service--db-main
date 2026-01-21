@@ -30,6 +30,7 @@ class Backup {
   db = {};
 
   async init() {
+    console.log("Run backup service...");
     await this.createServiceFiles();
     await this.runWatch()
   }
@@ -143,7 +144,7 @@ let backup = new Backup({
   backupPaths: JSON.parse(DB_MAIN__BACKUP_PATHS), 
   reportPath: DB_MAIN__BACKUP_REPORT_PATH, 
   messagingFilePath: DB_MAIN__BACKUP_MESSAGING_FILE, 
-  rootPath: `${WORKDIR_BASE}/${DB_MAIN__SERVICE}`,
+  rootPath: WORKDIR_BASE,
   db: {
     user: DB_MAIN__USER_DB,
     password: DB_MAIN__PASSWORD_DB,
