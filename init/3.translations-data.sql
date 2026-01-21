@@ -290,7 +290,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 344	The rating cannot be published if:	{"en": "The rating cannot be published if:", "ru": "Рейтинг не может быть опубликован, если:", "uk": "Рейтинг не може бути опублікований, якщо:"}	2	2023-05-15 11:46:52.659+00	2023-05-15 11:47:32.947+00
 196	The router does not have a key that is used in the main menu	{"en": "The router does not have a key that is used in the main menu", "ru": "В роутере нет ключа, которий используется в главном меню", "uk": "У роутера немає ключа, який використовується в головному меню"}	2	2023-05-14 22:39:16.027+00	2023-05-15 11:52:42.843+00
 38	There is already another image associated with the domain	{"en": "There is already another image associated with the domain", "ru": "С доменом уже связано другое изображение", "uk": "З доменом уже пов’язано інше зображення"}	2	2023-04-03 17:45:03.885+00	2023-05-15 12:04:07.229+00
-211	There were errors while creating the cache	{"en": "При создании кеша возникли ошибки", "ru": "При создании кеша возникли ошибки", "uk": "Під час створення кешу виникли помилки"}	2	2023-05-14 22:39:16.086+00	2023-05-15 12:04:28.862+00
 379	Hidden	{"en": "Hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-05-20 20:05:05.566+00	2023-05-20 20:06:58.409+00
 371	This website is currently in the screenshot queue	{"en": "This website is currently in the screenshot queue", "ru": "Этот веб-сайт в настоящее время находится в очереди на создание скриншотов", "uk": "Цей веб-сайт зараз знаходиться в черзі на створення скриншотів"}	1	2023-05-15 20:24:58.729+00	2023-05-15 20:26:48.659+00
 25	This means that when you edit the logo/color, the changes will show up wherever this screenshot is used	{"en": "This means that when you edit the logo/color, the changes will show up wherever this screenshot is used", "ru": "Это означает, что когда вы редактируете логотип/цвет, изменения будут отображаться везде, где используется этот снимок экрана", "uk": "Це означає, що коли ви редагуєте логотип/колір, зміни відображатимуться всюди, де використовується цей знімок екрана"}	2	2023-04-03 17:45:03.859+00	2023-05-15 12:11:42.208+00
@@ -354,6 +353,8 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 390	Add without "script" tag	{"en": "Add without \\"script\\" tag", "ru": "Добавить без тега \\"script\\"", "uk": "Додати без тегу \\"script\\""}	2	2023-05-24 14:36:36.34+00	2023-05-28 23:18:59.013+00
 370	You can not remove a rating that has websites or labels	{"en": "You can not remove a rating that has websites or labels", "ru": "Вы не можете удалить рейтинг, в котором есть веб-сайты или ярлыки", "uk": "Ви не можете видалити рейтинг, який містить веб-сайти або ярлыки"}	1	2023-05-15 20:24:58.719+00	2023-05-29 17:35:59.172+00
 395	Remove rating from cache	{"en": "Remove rating from cache", "ru": "Удалите рейтинг из кеша", "uk": "Удалите рейтинг із кеша"}	1	2023-05-30 20:37:47.309+00	2023-05-30 20:39:36.902+00
+211	There were errors while creating the cache	{"en": "There were errors while creating the cache", "ru": "При создании кеша возникли ошибки", "uk": "Під час створення кешу виникли помилки"}	2	2023-05-14 22:39:16.086+00	2026-01-21 09:43:46.29+00
+398	To save you need to select a color from the palette, or by clicking on the preview image	{"en": "To save you need to select a color from the palette, or by clicking on the preview image", "ru": "Для сохранения необходимо выбрать цвет из палитры или щелкнуть по изображению предварительного просмотра", "uk": "Щоб зберегти, потрібно вибрати колір з палітри або клікнути на зображенні попереднього перегляду"}	2	2026-01-21 09:46:43.598+00	2026-01-21 09:48:33.069+00
 \.
 
 
@@ -361,7 +362,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 395, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 398, true);
 
 
 --
