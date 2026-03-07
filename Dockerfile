@@ -1,8 +1,8 @@
 FROM postgres:15.1-alpine
 RUN apk add --update nodejs npm
 
-ARG WORKDIR_BASE
+ARG APP_DIR
 
-WORKDIR ${WORKDIR_BASE}
+WORKDIR ${APP_DIR}
 
 COPY server.js ./

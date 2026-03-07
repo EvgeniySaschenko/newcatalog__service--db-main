@@ -10,7 +10,7 @@ let {
   DB_MAIN__BACKUP_PATHS,
   DB_MAIN__BACKUP_REPORT_PATH,
   DB_MAIN__BACKUP_MESSAGING_FILE,
-  WORKDIR_BASE,
+  APP_DIR,
   DB_MAIN__SERVICE,
   API__SERVICE,
 } = process.env;
@@ -144,7 +144,7 @@ let backup = new Backup({
   backupPaths: JSON.parse(DB_MAIN__BACKUP_PATHS), 
   reportPath: DB_MAIN__BACKUP_REPORT_PATH, 
   messagingFilePath: DB_MAIN__BACKUP_MESSAGING_FILE, 
-  rootPath: WORKDIR_BASE,
+  rootPath: APP_DIR,
   db: {
     user: DB_MAIN__USER_DB,
     password: DB_MAIN__PASSWORD_DB,
