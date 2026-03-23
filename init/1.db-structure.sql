@@ -2,12 +2,15 @@
 -- PostgreSQL database dump
 --
 
--- Dumped from database version 15.1
--- Dumped by pg_dump version 15.1
+\restrict cQAgBaTsQgCmBxMuzo9oaSPE6SAutEQKOGXLV9t2rxDK8u4WAlRe1an2cfqtTNY
+
+-- Dumped from database version 18.3
+-- Dumped by pg_dump version 18.3
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
 SET idle_in_transaction_session_timeout = 0;
+SET transaction_timeout = 0;
 SET client_encoding = 'UTF8';
 SET standard_conforming_strings = on;
 SELECT pg_catalog.set_config('search_path', '', false);
@@ -48,7 +51,7 @@ CREATE SEQUENCE public."backups_backupId_seq"
     CACHE 1;
 
 
-ALTER TABLE public."backups_backupId_seq" OWNER TO postgres;
+ALTER SEQUENCE public."backups_backupId_seq" OWNER TO postgres;
 
 --
 -- Name: backups_backupId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -113,7 +116,7 @@ CREATE SEQUENCE public.ratings_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.ratings_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.ratings_id_seq OWNER TO postgres;
 
 --
 -- Name: ratings_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -157,7 +160,7 @@ CREATE SEQUENCE public.ratings_items_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.ratings_items_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.ratings_items_id_seq OWNER TO postgres;
 
 --
 -- Name: ratings_items_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -200,7 +203,7 @@ CREATE SEQUENCE public.ratings_items_img_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.ratings_items_img_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.ratings_items_img_id_seq OWNER TO postgres;
 
 --
 -- Name: ratings_items_img_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -222,7 +225,7 @@ CREATE SEQUENCE public.ratings_labels_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.ratings_labels_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.ratings_labels_id_seq OWNER TO postgres;
 
 --
 -- Name: ratings_labels_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -261,7 +264,7 @@ CREATE SEQUENCE public."records_deleted_recordDeletedId_seq"
     CACHE 1;
 
 
-ALTER TABLE public."records_deleted_recordDeletedId_seq" OWNER TO postgres;
+ALTER SEQUENCE public."records_deleted_recordDeletedId_seq" OWNER TO postgres;
 
 --
 -- Name: records_deleted_recordDeletedId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -303,7 +306,7 @@ CREATE SEQUENCE public.screens_processing_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.screens_processing_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.screens_processing_id_seq OWNER TO postgres;
 
 --
 -- Name: screens_processing_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -344,7 +347,7 @@ CREATE SEQUENCE public.sections_id_seq
     CACHE 1;
 
 
-ALTER TABLE public.sections_id_seq OWNER TO postgres;
+ALTER SEQUENCE public.sections_id_seq OWNER TO postgres;
 
 --
 -- Name: sections_id_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -382,7 +385,7 @@ CREATE SEQUENCE public."settings_settingId_seq"
     CACHE 1;
 
 
-ALTER TABLE public."settings_settingId_seq" OWNER TO postgres;
+ALTER SEQUENCE public."settings_settingId_seq" OWNER TO postgres;
 
 --
 -- Name: settings_settingId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -420,7 +423,7 @@ CREATE SEQUENCE public."translations_translationId_seq"
     CACHE 1;
 
 
-ALTER TABLE public."translations_translationId_seq" OWNER TO postgres;
+ALTER SEQUENCE public."translations_translationId_seq" OWNER TO postgres;
 
 --
 -- Name: translations_translationId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -481,7 +484,7 @@ CREATE SEQUENCE public."users-auth_userAuthId_seq"
     CACHE 1;
 
 
-ALTER TABLE public."users-auth_userAuthId_seq" OWNER TO postgres;
+ALTER SEQUENCE public."users-auth_userAuthId_seq" OWNER TO postgres;
 
 --
 -- Name: users-auth_userAuthId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -503,7 +506,7 @@ CREATE SEQUENCE public."users_userId_seq"
     CACHE 1;
 
 
-ALTER TABLE public."users_userId_seq" OWNER TO postgres;
+ALTER SEQUENCE public."users_userId_seq" OWNER TO postgres;
 
 --
 -- Name: users_userId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
@@ -719,4 +722,6 @@ ALTER TABLE ONLY public.users
 --
 -- PostgreSQL database dump complete
 --
+
+\unrestrict cQAgBaTsQgCmBxMuzo9oaSPE6SAutEQKOGXLV9t2rxDK8u4WAlRe1an2cfqtTNY
 
