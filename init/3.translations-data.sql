@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict 42GEvQ7pfOtnHRbYqasbg0AYqICQkvqsps9iGS4HdMqU0abGeloNtPID5uRYJLW
+\restrict tKGVXeZ2F4tjJMEx2lBtDkBp5JFq7dIP5e9Wx5TG0hdWLDPHNavcnZZOuIDjSfl
 
 -- Dumped from database version 18.3
 -- Dumped by pg_dump version 18.3
@@ -171,7 +171,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 183	Description	{"en": "Description", "ru": "Описание", "uk": "Опис"}	3	2023-05-14 22:39:09.014+00	2023-05-14 22:40:13.296+00
 184	Links to sources	{"en": "Links to sources", "ru": "Ссылки на источники", "uk": "Посилання на джерела"}	3	2023-05-14 22:39:09.016+00	2023-05-14 22:44:56.338+00
 182	Page content not found	{"en": "Page content not found", "ru": "Контент страницы не найден", "uk": "Контент сторінки не знайдено"}	3	2023-05-14 22:39:09+00	2023-05-14 22:46:26.543+00
-197	Backups report	{"en": "Backups report", "ru": "Отчет о резервных копиях", "uk": "Звіт про резервне копіювання"}	2	2023-05-14 22:39:16.058+00	2023-05-14 23:17:02.544+00
 156	Change password	{"en": "Change password", "ru": "Изменить пароль", "uk": "Змінити пароль"}	2	2023-04-03 17:45:04.085+00	2023-05-14 23:24:46.75+00
 213	Create cache for sections?	{"en": "Create cache for sections?", "ru": "Создать кеш для разделов?", "uk": "Створити кеш для розділів?"}	2	2023-05-14 22:39:16.089+00	2023-05-14 23:46:02.466+00
 200	Date create	{"en": "Date create", "ru": "Дата создания", "uk": "Дата створення"}	2	2023-05-14 22:39:16.063+00	2023-05-14 23:52:59.193+00
@@ -192,15 +191,12 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 176	Value must be e-mail	{"en": "Value must be e-mail", "ru": "Значение должно быть e-mail", "uk": "Значення має бути e-mail"}	1	2023-04-03 17:45:06.471+00	2023-05-15 12:57:12.374+00
 351	#Title main page	{"en": "Internet service rating", "ru": "Рейтинг интернет-сервисов", "uk": "Рейтинг інтернет-сервісів"}	3	2023-05-15 18:15:17.139+00	2023-05-15 18:15:58.988+00
 354	Add website	{"en": "Add website", "ru": "Добавить веб-сайт", "uk": "Додати веб-сайт"}	2	2023-05-15 20:08:55.499+00	2023-05-15 20:09:34.508+00
-248	The key (string) that the server should return in the response if requests to the API server are allowed	{"en": "The key (string) that the server should return in the response if requests to the API server are allowed", "ru": "Ключ (строка), который сервер должен вернуть в ответе, если запросы к серверу API разрешены", "uk": "Ключ (рядок), який сервер має повернути у відповідь, якщо запити до сервера API дозволені"}	2	2023-05-14 22:39:16.172+00	2023-05-15 11:45:15.954+00
 268	The phrase that will be added at the beginning of the "title" tag	{"en": "The phrase that will be added at the beginning of the \\"title\\" tag", "ru": "Фраза, которая будет добавлена в начало тега title", "uk": "Фраза, яка буде додана на початку тегу \\"title\\""}	2	2023-05-14 22:39:16.208+00	2023-05-15 11:45:40.899+00
 265	This HTML will be added after the "header" tag	{"en": "This HTML will be added after the \\"header\\" tag", "ru": "Этот HTML будет добавлен после тега \\"header\\"", "uk": "Цей HTML буде додано після тегу \\"header\\""}	2	2023-05-14 22:39:16.203+00	2023-05-15 12:09:04.815+00
 262	This CSS will be added to the "head" tag	{"en": "This CSS will be added to the \\"head\\" tag", "ru": "Этот CSS будет добавлен к тегу «head»", "uk": "Цей CSS буде додано до тегу \\"head\\""}	2	2023-05-14 22:39:16.196+00	2023-05-24 14:38:06.454+00
 287	Incorrect file type	{"en": "Incorrect file type", "ru": "Неправильний тип файлу", "uk": "Неправильный тип файла"}	1	2023-05-14 22:39:20.568+00	2023-05-15 12:40:38.178+00
 293	Invalid SSL private key	{"en": "Invalid SSL private key", "ru": "Некорректный приватный ключ SSL", "uk": "Некоректний приватний ключ SSL"}	1	2023-05-14 22:39:20.589+00	2023-05-15 12:45:51.62+00
 288	Not valid setting	{"en": "Not valid setting", "ru": "Недействительная настройка", "uk": "Недійсне налаштування"}	1	2023-05-14 22:39:20.574+00	2023-05-15 12:47:53.458+00
-289	The server must be available	{"en": "The server must be available", "ru": "Сервер должен быть доступен", "uk": "Сервер має бути доступним"}	1	2023-05-14 22:39:20.576+00	2023-05-15 12:53:14.586+00
-249	Any string	{"en": "Any string", "ru": "Любая строка", "uk": "Будь-який рядок"}	2	2023-05-14 22:39:16.174+00	2023-05-14 23:06:34.662+00
 236	Backup	{"en": "Backup", "ru": "Бэкап", "uk": "Резервне копіювання"}	2	2023-05-14 22:39:16.154+00	2023-05-14 23:16:27.092+00
 255	Color primary	{"en": "Color primary", "ru": "Основной цвет", "uk": "Основний колір"}	2	2023-05-14 22:39:16.184+00	2023-05-14 23:38:02.842+00
 233	Colors	{"en": "Colors", "ru": "Цвета", "uk": "Кольори"}	2	2023-05-14 22:39:16.147+00	2023-05-14 23:41:29.058+00
@@ -218,7 +214,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 239	Port	{"en": "Port", "ru": "Порт", "uk": "Порт"}	2	2023-05-14 22:39:16.159+00	2023-05-15 10:35:07.741+00
 280	SSL certificate has been changed	{"en": "SSL certificate has been changed", "ru": "SSL-сертификат изменен", "uk": "Сертифікат SSL змінено"}	2	2023-05-14 22:39:16.229+00	2023-05-15 11:03:07.694+00
 250	Select file	{"en": "Select file", "ru": "Выберите файл", "uk": "Виберіть файл"}	2	2023-05-14 22:39:16.175+00	2023-05-15 11:16:12.571+00
-353	Server protection	{"en": "Server protection", "ru": "Защита сервера", "uk": "Захист сервера"}	2	2023-05-15 19:12:43.594+00	2023-05-15 19:13:59.538+00
 7	Home	{"en": "Main page", "ru": "Главная страница", "uk": "Головна сторінка"}	3	2023-04-03 17:45:00.667+00	2023-05-14 22:44:24.973+00
 185	Sources	{"en": "Sources", "ru": "Источники", "uk": "Джерела"}	3	2023-05-14 22:39:09.018+00	2023-05-14 22:49:25.63+00
 4	The server is being updated	{"en": "The server is being updated", "ru": "Сервер обновляется", "uk": "Сервер оновлюється"}	3	2023-04-03 17:45:00.66+00	2023-05-14 22:49:51.23+00
@@ -263,7 +258,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 117	If the rating is hidden	{"en": "If the rating is hidden", "ru": "Якщо рейтинг прихований", "uk": "Если рейтинг скрыт"}	2	2023-04-03 17:45:04.018+00	2023-05-15 09:51:34.25+00
 266	This HTML will be added before the "footer" tag	{"en": "This HTML will be added before the \\"footer\\" tag", "ru": "Этот HTML будет добавлен перед тегом \\"footer\\"", "uk": "Цей HTML буде додано перед тегом \\"footer\\""}	2	2023-05-14 22:39:16.204+00	2023-05-15 12:09:05.897+00
 376	Repeat password	{"en": "Repeat password", "ru": "Повторите пароль", "uk": "Повторіть пароль"}	2	2023-05-17 22:34:12.629+00	2023-05-17 22:37:33.933+00
-324	If the server "protector" is unavailable, you will not be able to access the admin panel	{"en": "If the server \\"protector\\" is unavailable, you will not be able to access the admin panel", "ru": "Если сервер \\"protector\\" недоступен, вы не сможете получить доступ к панели администратора", "uk": "Якщо сервер \\"protector\\" недоступний, ви не зможете отримати доступ до панелі адміністратора"}	2	2023-05-15 09:54:17.643+00	2023-05-15 09:55:21.188+00
 118	If there is no content to post, or the content is hidden	{"en": "If there is no content to post, or the content is hidden", "ru": "Если нет контента для публикации или контент скрыт", "uk": "Якщо немає контенту для публікації або контент прихований"}	2	2023-04-03 17:45:04.019+00	2023-05-15 09:56:09.677+00
 325	Image preloader	{"en": "Image preloader", "ru": "Изображение preloader", "uk": "Зображення preloader"}	2	2023-05-15 09:58:19.335+00	2023-05-15 09:59:37.539+00
 329	Languages	{"en": "Languages", "ru": "Языки", "uk": "Мови"}	2	2023-05-15 10:18:39.193+00	2023-05-15 10:20:07.063+00
@@ -276,12 +270,10 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 326	Created	{"en": "Created", "ru": "Создан", "uk": "Створено"}	2	2023-05-15 10:11:17.393+00	2023-05-15 11:00:55.89+00
 64	Screenshot uploaded	{"en": "Screenshot uploaded", "ru": "Скриншот загружен", "uk": "Скріншот завантажено"}	2	2023-04-03 17:45:03.932+00	2023-05-15 11:07:54.396+00
 333	Screenshots are not created automatically for subdomains	{"en": "Screenshots are not created automatically for subdomains", "ru": "Для субдоменов скриншоты не создаются автоматически ", "uk": "Для субдоменів скриншоти не створюються автоматично"}	2	2023-05-15 11:09:28.216+00	2023-05-15 11:11:19.212+00
-246	Server url that allows / forbids sending requests to the API server	{"en": "Server url that allows / forbids sending requests to the API server", "ru": "URL-адрес сервера, который разрешает/запрещает отправку запросов на сервер API", "uk": "URL-адреса сервера, який дозволяє/забороняє надсилати запити на сервер API"}	2	2023-05-14 22:39:16.17+00	2023-05-15 11:22:24.925+00
 304	Settings	{"en": "Settings", "ru": "Настройки", "uk": "Налаштування"}	2	2023-05-14 23:11:03.297+00	2023-05-15 11:24:08.011+00
 108	Sorting	{"en": "Sorting", "ru": "Сортировка", "uk": "Сортування"}	2	2023-04-03 17:45:04.004+00	2023-05-15 11:27:22.62+00
 340	SSL private key	{"en": "SSL private key", "ru": "Приватный ключ SSL", "uk": "Приватний ключ SSL"}	2	2023-05-15 11:29:31.537+00	2023-05-15 11:31:05.399+00
 339	SSL сertificate	{"en": "SSL сertificate", "ru": "SSL-сертификат", "uk": "SSL сертифікат"}	2	2023-05-15 11:29:31.536+00	2023-05-15 11:31:30.225+00
-216	Started sending files to a remote server	{"en": "Started sending files to a remote server", "ru": "Началась отправка файлов на удаленный сервер", "uk": "Розпочато надсилання файлів на віддалений сервер"}	2	2023-05-14 22:39:16.093+00	2023-05-15 11:32:16.122+00
 58	Take new screenshot	{"en": "Take new screenshot", "ru": "Сделать новый скриншот", "uk": "Зробити новий скріншот"}	2	2023-04-03 17:45:03.921+00	2023-05-15 11:33:43.391+00
 24	The domain images will be linked to the subdomain	{"en": "The domain images will be linked to the subdomain", "ru": "Изображения домена будут привязаны к субдомену", "uk": "Зображення домену будуть прив’язані до субдомену"}	2	2023-04-03 17:45:03.857+00	2023-05-15 11:35:13.294+00
 342	Favicon will change immediately after saving the settings	{"en": "Favicon will change immediately after saving the settings", "ru": "Favicon изменится сразу после сохранения настроек", "uk": "Favicon зміниться відразу після збереження налаштувань"}	2	2023-05-15 11:43:21.583+00	2023-05-15 11:44:26.337+00
@@ -291,7 +283,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 379	Hidden	{"en": "Hidden", "ru": "Скрыт", "uk": "Прихований"}	2	2023-05-20 20:05:05.566+00	2023-05-20 20:06:58.409+00
 371	This website is currently in the screenshot queue	{"en": "This website is currently in the screenshot queue", "ru": "Этот веб-сайт в настоящее время находится в очереди на создание скриншотов", "uk": "Цей веб-сайт зараз знаходиться в черзі на створення скриншотів"}	1	2023-05-15 20:24:58.729+00	2023-05-15 20:26:48.659+00
 25	This means that when you edit the logo/color, the changes will show up wherever this screenshot is used	{"en": "This means that when you edit the logo/color, the changes will show up wherever this screenshot is used", "ru": "Это означает, что когда вы редактируете логотип/цвет, изменения будут отображаться везде, где используется этот снимок экрана", "uk": "Це означає, що коли ви редагуєте логотип/колір, зміни відображатимуться всюди, де використовується цей знімок екрана"}	2	2023-04-03 17:45:03.859+00	2023-05-15 12:11:42.208+00
-275	This setting can completely block access to the admin panel	{"en": "This setting can completely block access to the admin panel", "ru": "Эта настройка может полностью заблокировать доступ к панели администратора", "uk": "Цей параметр може повністю заблокувати доступ до панелі адміністратора"}	2	2023-05-14 22:39:16.22+00	2023-05-15 12:12:29.579+00
 129	To create a cache, you need to save changes	{"en": "To create a cache, you need to save changes", "ru": "Для создания кеша нужно сохранить изменения", "uk": "Щоб створити кеш, потрібно зберегти зміни"}	2	2023-04-03 17:45:04.038+00	2023-05-15 12:14:21.127+00
 348	To create a logo, go to the logo creation tab	{"en": "To create a logo, go to the logo creation tab", "ru": "Для создания логотипа перейдите на вкладку создание логотипа", "uk": "Щоб створити логотип, перейдіть на вкладку створення логотипу"}	2	2023-05-15 12:16:38.07+00	2023-05-15 12:17:10.895+00
 224	To see the changes in the "admin", you need to refresh the page	{"en": "To see the changes in the \\"admin\\", you need to refresh the page", "ru": "Чтобы увидеть изменения в \\"админке\\", нужно обновить страницу", "uk": "Щоб побачити зміни в \\"адмінці\\", потрібно оновити сторінку"}	2	2023-05-14 22:39:16.132+00	2023-05-15 12:18:50.772+00
@@ -305,7 +296,6 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 294	Select a service name from the list	{"en": "Select a service name from the list", "ru": "Выберите имя сервиса из списка", "uk": "Виберіть ім'я сервісу зі списку"}	1	2023-05-14 22:39:20.591+00	2023-05-15 12:49:26.539+00
 166	The link must start with "http" or "https"	{"en": "The link must start with \\"http\\" or \\"https\\"", "ru": "Ссылка должна начинаться с «http» или «https».", "uk": "Посилання має починатися з \\"http\\" або \\"https\\""}	1	2023-04-03 17:45:06.453+00	2023-05-15 12:50:51.131+00
 163	The number of characters in a string must be in the range:	{"en": "The number of characters in a string must be in the range:", "ru": "Количество символов в строке должно быть в диапазоне:", "uk": "Кількість символів у рядку має бути в діапазоні:"}	1	2023-04-03 17:45:06.447+00	2023-05-15 12:52:09.808+00
-290	The server should send the specified key in response	{"en": "The server should send the specified key in response", "ru": "Сервер должен отправить указанный ключ в ответ", "uk": "Сервер повинен надіслати вказаний ключ у відповідь"}	1	2023-05-14 22:39:20.579+00	2023-05-15 12:53:45.065+00
 297	The value must be "http" / "https" link	{"en": "The value must be \\"http\\" / \\"https\\" link", "ru": "Значение должно быть ссылкой \\"http\\" / \\"https\\"", "uk": "Значенням має бути посилання \\"http\\" / \\"https\\"."}	1	2023-05-14 22:39:20.606+00	2023-05-15 12:54:12.097+00
 286	There are no items in the rating to publish, or it is hidden	{"en": "There are no items in the rating to publish, or it is hidden", "ru": "В рейтинге нет элементов для публикации, или он скрыт", "uk": "У рейтингу немає пунктів для публікації, або він прихований"}	1	2023-05-14 22:39:20.561+00	2023-05-15 12:54:41.759+00
 177	This e-mail already exists	{"en": "This e-mail already exists", "ru": "Такой e-mail уже существует", "uk": "Такий e-mail вже існує"}	1	2023-04-03 17:45:06.473+00	2023-05-15 12:55:25.685+00
@@ -355,6 +345,23 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 400	Algorithm for creating an SSH key (www.openssh.org)	{"en": "Algorithm for creating an SSH key (www.openssh.org)", "ru": "Алгоритм создания SSH-ключа (www.openssh.org)", "uk": "Алгоритм створення SSH-ключа (www.openssh.org)"}	2	2026-03-22 19:12:27.667+00	2026-03-22 19:22:03.511+00
 401	Public SSH key for the remote server	{"en": "Public SSH key for the remote server", "ru": "Открытый SSH-ключ для удалённого сервера", "uk": "Відкритий SSH-ключ для віддаленого сервера"}	2	2026-03-22 19:21:33.048+00	2026-03-22 19:23:15.231+00
 402	Backup is in progress	{"en": "Backup is in progress", "ru": "Выполняется резервное копирование", "uk": "Виконується резервне копіювання"}	1	2026-03-22 19:23:50.032+00	2026-03-22 19:24:17.38+00
+404	Access to the API server is temporarily blocked, please refresh the page later	{"en": "Access to the API server is temporarily blocked, please refresh the page later", "ru": "Доступ к API-серверу временно заблокирован, пожалуйста, обновите страницу позже", "uk": "Доступ до сервера API тимчасово заблоковано, будь ласка, оновіть сторінку пізніше"}	2	2026-04-22 20:41:41.044+00	2026-04-22 20:42:27.279+00
+410	Create a backup copy and send it to the server	{"en": "Create a backup copy and send it to the server", "ru": "Создайте резервную копию и отправьте её на сервер", "uk": "Створіть резервну копію та надішліть її на сервер"}	2	2026-04-22 20:41:41.081+00	2026-04-22 20:44:18.409+00
+416	Error while trying to restore	{"en": "Error while trying to restore", "ru": "Ошибка при попытке восстановления", "uk": "Помилка під час спроби відновлення"}	2	2026-04-22 20:41:41.114+00	2026-04-22 20:45:00.477+00
+408	Files and database will be restored from backup	{"en": "Files and database will be restored from backup", "ru": "Файлы и база данных будут восстановлены из резервной копии", "uk": "Файли та база даних будуть відновлені з резервної копії"}	2	2026-04-22 20:41:41.064+00	2026-04-22 20:45:36.102+00
+409	Path to the folder on the remote server	{"en": "Path to the folder on the remote server", "ru": "Путь к папке на удалённом сервере", "uk": "Шлях до папки на віддаленому сервері"}	2	2026-04-22 20:41:41.067+00	2026-04-22 20:47:28.795+00
+405	Reload page	{"en": "Reload page", "ru": "Перезагрузить страницу", "uk": "Перезавантажити сторінку"}	2	2026-04-22 20:41:41.048+00	2026-04-22 20:47:56.688+00
+407	Report restores	{"en": "Report restores", "ru": "Отчет о восстановлении", "uk": "Звіт про відновлення"}	2	2026-04-22 20:41:41.057+00	2026-04-22 20:50:18.642+00
+414	Restore from backup?	{"en": "Restore from backup?", "ru": "Восстановить из резервной копии?", "uk": "Відновити з резервної копії?"}	2	2026-04-22 20:41:41.106+00	2026-04-22 20:51:57.455+00
+403	The server is blocked	{"en": "The server is blocked", "ru": "Сервер заблокирован", "uk": "Сервер заблоковано"}	2	2026-04-22 20:41:40.953+00	2026-04-22 20:54:00.524+00
+417	For subdomains: You can check the availability of a screenshot in the "Content" tab --> the desired site --> "Logo" / "Screenshot" tabs	{"en": "For subdomains: You can check the availability of a screenshot in the \\"Content\\" tab --> the desired site --> \\"Logo\\" / \\"Screenshot\\" tabs", "ru": "Для поддоменов: Проверить наличие скриншота можно на вкладке «Контент» --> нужный сайт --> вкладки «Логотип» / «Скриншот»", "uk": "Для піддоменів: Ви можете перевірити наявність скріншоту на вкладці \\"Вміст\\" --> потрібний сайт --> вкладки \\"Логотип\\" / \\"Скріншот\\""}	2	2026-04-22 20:41:41.147+00	2026-04-22 20:46:38.62+00
+406	Report backups	{"en": "Report backups", "ru": "Отчеты о резервном копировании", "uk": "Звіти про резервні копії"}	2	2026-04-22 20:41:41.054+00	2026-04-22 20:49:29.454+00
+412	Restore backup	{"en": "Restore backup", "ru": "Восстановить из резервной копии", "uk": "Відновити з резервної копії"}	2	2026-04-22 20:41:41.088+00	2026-04-22 20:51:31.639+00
+413	The backup process has started	{"en": "The backup process has started", "ru": "Процесс резервного копирования начался", "uk": "Процес резервного копіювання розпочато"}	2	2026-04-22 20:41:41.101+00	2026-04-22 20:52:33.152+00
+415	The restore process from backup has started	{"en": "The restore process from backup has started", "ru": "Начался процесс восстановления из резервной копии", "uk": "Процес відновлення з резервної копії розпочато"}	2	2026-04-22 20:41:41.11+00	2026-04-22 20:53:36.076+00
+411	The server will download a backup copy, after which the recovery process will start	{"en": "The server will download a backup copy, after which the recovery process will start", "ru": "Сервер загрузит резервную копию, после чего начнётся процесс восстановления", "uk": "Сервер завантажить резервну копію, після чого розпочнеться процес відновлення"}	2	2026-04-22 20:41:41.085+00	2026-04-22 20:54:44.6+00
+418	Restoring from backup in progress	{"en": "Restoring from backup in progress", "ru": "Выполняется восстановление из резервной копии", "uk": "Триває відновлення з резервної копії"}	1	2026-04-22 20:55:02.084+00	2026-04-22 20:55:37.56+00
+419	The field cannot be empty	{"en": "The field cannot be empty", "ru": "Поле не может быть пустым", "uk": "Поле не може бути порожнім"}	1	2026-04-22 20:55:02.09+00	2026-04-22 20:56:02.168+00
 \.
 
 
@@ -362,7 +369,7 @@ COPY public.translations ("translationId", key, text, "serviceType", "dateCreate
 -- Name: translations_translationId_seq; Type: SEQUENCE SET; Schema: public; Owner: postgres
 --
 
-SELECT pg_catalog.setval('public."translations_translationId_seq"', 402, true);
+SELECT pg_catalog.setval('public."translations_translationId_seq"', 419, true);
 
 
 --
@@ -377,5 +384,5 @@ ALTER TABLE ONLY public.translations
 -- PostgreSQL database dump complete
 --
 
-\unrestrict 42GEvQ7pfOtnHRbYqasbg0AYqICQkvqsps9iGS4HdMqU0abGeloNtPID5uRYJLW
+\unrestrict tKGVXeZ2F4tjJMEx2lBtDkBp5JFq7dIP5e9Wx5TG0hdWLDPHNavcnZZOuIDjSfl
 
