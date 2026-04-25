@@ -2,7 +2,7 @@
 -- PostgreSQL database dump
 --
 
-\restrict cQAgBaTsQgCmBxMuzo9oaSPE6SAutEQKOGXLV9t2rxDK8u4WAlRe1an2cfqtTNY
+\restrict BctLnJ3f4WF23zZamDhKghBikUWSPZSVwzA61UV7lmg6TLQNhRMsbquKCQpFGfj
 
 -- Dumped from database version 18.3
 -- Dumped by pg_dump version 18.3
@@ -58,6 +58,43 @@ ALTER SEQUENCE public."backups_backupId_seq" OWNER TO postgres;
 --
 
 ALTER SEQUENCE public."backups_backupId_seq" OWNED BY public.backups."backupId";
+
+
+--
+-- Name: backups_restore; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.backups_restore (
+    "backupRestoreId" integer NOT NULL,
+    "isError" boolean DEFAULT false,
+    report jsonb,
+    "dateCreate" timestamp with time zone,
+    "dateUpdate" timestamp with time zone
+);
+
+
+ALTER TABLE public.backups_restore OWNER TO postgres;
+
+--
+-- Name: backups_restore_backupRestoreId_seq; Type: SEQUENCE; Schema: public; Owner: postgres
+--
+
+CREATE SEQUENCE public."backups_restore_backupRestoreId_seq"
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER SEQUENCE public."backups_restore_backupRestoreId_seq" OWNER TO postgres;
+
+--
+-- Name: backups_restore_backupRestoreId_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: postgres
+--
+
+ALTER SEQUENCE public."backups_restore_backupRestoreId_seq" OWNED BY public.backups_restore."backupRestoreId";
 
 
 --
@@ -523,6 +560,13 @@ ALTER TABLE ONLY public.backups ALTER COLUMN "backupId" SET DEFAULT nextval('pub
 
 
 --
+-- Name: backups_restore backupRestoreId; Type: DEFAULT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.backups_restore ALTER COLUMN "backupRestoreId" SET DEFAULT nextval('public."backups_restore_backupRestoreId_seq"'::regclass);
+
+
+--
 -- Name: labels labelId; Type: DEFAULT; Schema: public; Owner: postgres
 --
 
@@ -605,6 +649,14 @@ ALTER TABLE ONLY public.users_auth ALTER COLUMN "userAuthId" SET DEFAULT nextval
 
 ALTER TABLE ONLY public.backups
     ADD CONSTRAINT backups_pkey PRIMARY KEY ("backupId");
+
+
+--
+-- Name: backups_restore backups_restore_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.backups_restore
+    ADD CONSTRAINT backups_restore_pkey PRIMARY KEY ("backupRestoreId");
 
 
 --
@@ -723,5 +775,5 @@ ALTER TABLE ONLY public.users
 -- PostgreSQL database dump complete
 --
 
-\unrestrict cQAgBaTsQgCmBxMuzo9oaSPE6SAutEQKOGXLV9t2rxDK8u4WAlRe1an2cfqtTNY
+\unrestrict BctLnJ3f4WF23zZamDhKghBikUWSPZSVwzA61UV7lmg6TLQNhRMsbquKCQpFGfj
 
